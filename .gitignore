@@ -1,0 +1,12 @@
+# No subir fotos (pesan demasiado)
+fotos/
+haroldohorta_selecciones/
+
+# No subir la base de datos (se genera localmente)
+*.db
+
+# No subir archivos temporales de Python y sistema
+__pycache__/
+.DS_Store
+puntos_mapa.json
+mapa_maestro.json
