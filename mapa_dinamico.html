@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atlas SUR DAO - Haroldo Horta</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background: #0f0f0f; font-family: 'Courier New', monospace; }
+        #map { height: 100%; width: 100%; }
+        .popup-img { width: 100%; border-radius: 2px; margin-top: 5px; cursor: pointer; border: 1px solid #444; }
+        .leaflet-popup-content-wrapper { background: #1a1a1a; color: #ccc; border-radius: 0; border: 1px solid #333; }
+        .leaflet-popup-tip { background: #1a1a1a; }
+        .btn-portafolio {
+            width: 100%; background: #333; color: #eee; border: 1px solid #555;
+            padding: 8px; cursor: pointer; margin-top: 8px; font-family: inherit; font-size: 11px;
+            transition: 0.3s;
+        }
+        .btn-portafolio:hover { background: #555; color: #fff; }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([-30, -70], 4);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: 'SUR DAO | Archivo Haroldo Horta'
+    }).addTo(map);
+
+    // Colores por Capa
+    const getStyle = (capa) => {
+        switch(capa) {
+            case 'Corresponsal': return { color: "#ff4d4d", fillColor: "#ff4d4d" }; // Rojo
+            case 'Libre Vuelo': return { color: "#4d94ff", fillColor: "#4d94ff" }; // Azul
+            case 'Editorial': return { color: "#ffdb4d", fillColor: "#ffdb4d" };   // Amarillo
+            default: return { color: "#888", fillColor: "#888" };
+        }
+    };
+
+    const capasGroup = {
+        "Corresponsal": L.layerGroup().addTo(map),
+        "Libre Vuelo": L.layerGroup().addTo(map),
+        "Editorial": L.layerGroup().addTo(map),
+        "General": L.layerGroup().addTo(map)
+    };
+
+    fetch('puntos_mapa.json')
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(punto => {
+                const style = getStyle(punto.capa);
+                const marker = L.circleMarker([punto.lat, punto.lon], {
+                    radius: 7,
+                    fillColor: style.fillColor,
+                    color: "#000",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                });
+
+                // Extraemos el nombre de la subcarpeta del thumb para la galería
+                // thumb: ./fotos/pub_latinoamerica/pub_chile/lota/foto.webp
+                const partes = punto.thumb.split('/');
+                const nombreCarpeta = partes[partes.length - 2]; 
+
+                let content = `
+                    <div style="min-width: 180px;">
+                        <div style="font-size: 10px; color: ${style.fillColor}; font-weight: bold; margin-bottom: 5px;">
+                            ${punto.capa.toUpperCase()}
+                        </div>
+                        <a href="${punto.thumb}" target="_blank">
+                            <img src="${punto.thumb}" class="popup-img">
+                        </a>
+                        <div style="font-size: 11px; margin-top: 5px; color: #999;">${punto.id}</div>
+                        <button class="btn-portafolio" onclick="window.location.href='galeria.html?zona=${nombreCarpeta}'">
+                            ABRIR PORTAFOLIO 📂
+                        </button>
+                    </div>
+                `;
+
+                marker.bindPopup(content);
+                
+                if (capasGroup[punto.capa]) {
+                    marker.addTo(capasGroup[punto.capa]);
+                } else {
+                    marker.addTo(capasGroup["General"]);
+                }
+            });
+
+            L.control.layers(null, capasGroup, { collapsed: false }).addTo(map);
+        });
+
+</script>
+</body>
+</html>
