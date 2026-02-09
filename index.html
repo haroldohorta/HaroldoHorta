@@ -2,51 +2,100 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlas SUR DAO - Haroldo Horta</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         body, html { margin: 0; padding: 0; height: 100%; background: #0f0f0f; font-family: 'Courier New', monospace; }
         #map { height: 100%; width: 100%; }
-        .popup-img { width: 100%; border: 1px solid #444; margin-top: 5px; }
+        /* Estilos oscuros para el popup */
+        .leaflet-popup-content-wrapper { background: #1a1a1a; color: #eee; border: 1px solid #444; border-radius: 2px; }
+        .leaflet-popup-tip { background: #1a1a1a; border-top: 1px solid #444; }
+        .popup-img { width: 100%; border: 1px solid #444; margin-top: 5px; object-fit: cover; min-height: 100px; display: block; }
         .btn-portafolio {
-            width: 100%; background: #222; color: #eee; border: 1px solid #444;
-            padding: 8px; cursor: pointer; margin-top: 8px; font-family: inherit;
+            width: 100%; background: #333; color: #fff; border: 1px solid #555;
+            padding: 8px; cursor: pointer; margin-top: 8px; font-family: inherit; font-size: 11px;
+            text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;
         }
+        .btn-portafolio:hover { background: #555; border-color: #888; }
     </style>
 </head>
 <body>
+
 <div id="map"></div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-    const map = L.map('map').setView([-30, -70], 4);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
+    // 1. Iniciar Mapa (Centrado globalmente para ver todo)
+    const map = L.map('map').setView([-20, -60], 3);
 
+    // 2. Capa Base Oscura
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        subdomains: 'abcd',
+        maxZoom: 19
+    }).addTo(map);
+
+    // 3. Colores por Categoría
     const getStyle = (capa) => {
-        if(capa === 'Corresponsal') return {color: "#ff4d4d"};
-        if(capa === 'Libre Vuelo') return {color: "#4d94ff"};
-        return {color: "#ffdb4d"}; // Editorial
+        if(capa && capa.includes('Corresponsal')) return {color: "#ff4d4d"}; // Rojo Revolución
+        if(capa && capa.includes('Vuelo')) return {color: "#4d94ff"};       // Azul Aire
+        return {color: "#ffdb4d"}; // Amarillo Historia
     };
 
-    fetch('puntos_mapa.json') // Busca el JSON en la raíz
+    // 4. Cargar y Corregir Datos
+    fetch('puntos_mapa.json')
         .then(res => res.json())
         .then(data => {
+            console.log("Cargando " + data.length + " puntos...");
+            
             data.forEach(punto => {
+                // --- EL FIX MÁGICO PARA WINDOWS ---
+                // Convierte "fotos\carpeta\foto.webp" a "fotos/carpeta/foto.webp"
+                let rutaLimpia = punto.thumb.replace(/\\/g, '/');
+                
+                // Limpieza extra por si acaso
+                if (rutaLimpia.startsWith('./')) rutaLimpia = rutaLimpia.substring(2);
+
+                // Detectar zona para el botón (ej: 'nicaragua')
+                const partes = rutaLimpia.split('/');
+                let carpetaZona = (partes.length > 1) ? partes[1] : 'general';
+
+                // Crear Marcador
                 const marker = L.circleMarker([punto.lat, punto.lon], {
-                    radius: 7, fillColor: getStyle(punto.capa).color, color: "#000", weight: 1, fillOpacity: 0.8
+                    radius: 6,
+                    fillColor: getStyle(punto.capa).color,
+                    color: "#000",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
                 }).addTo(map);
 
-                const carpeta = punto.thumb.split('/')[2]; 
+                // Crear Popup con imagen corregida
                 marker.bindPopup(`
-                    <div style="text-align:center; background:#1a1a1a; color:white; padding:10px;">
-                        <img src="${punto.thumb}" class="popup-img" style="width:150px">
-                        <div style="font-size:10px; margin:5px 0;">${punto.id}</div>
-                        <button class="btn-portafolio" onclick="window.location.href='galeria.html?zona=${carpeta}'">
-                            ABRIR PORTAFOLIO 📂
+                    <div style="text-align:center; min-width: 160px;">
+                        <div style="font-size:10px; color:#888; margin-bottom:4px; text-transform:uppercase;">
+                            ${punto.capa || 'Archivo'}
+                        </div>
+                        
+                        <img src="${rutaLimpia}" 
+                             class="popup-img" 
+                             alt="Evidencia Visual"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/200x150/333/666?text=CARGANDO...';">
+                        
+                        <div style="font-size:9px; color:#555; margin:6px 0; word-break: break-all;">
+                            ID: ${punto.id}
+                        </div>
+
+                        <button class="btn-portafolio" onclick="window.location.href='galeria.html?zona=${carpetaZona}'">
+                            ABRIR EXPEDIENTE 📂
                         </button>
                     </div>
                 `);
             });
-        });
+        })
+        .catch(err => console.error("Error crítico cargando JSON:", err));
 </script>
+
 </body>
 </html>
