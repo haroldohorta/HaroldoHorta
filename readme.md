@@ -1,15 +1,20 @@
 #  Haroldo Horta: Atlas Digital y Soberanía Visual
 > *"Desde el corazon de la revolución Sandinista en Nicaragua al silencio infinito de Atacama. Un archivo rescatado para no olvidar el vuelo ni la dignidad humana."*
+> **⚠️ ATENCIÓN VISITAS:** Este es el almacén de código. Para entrar a la Experiencia Visual, haz clic aquí:
+
+[![VER MAPA VIVO](https://img.shields.io/badge/VER_MAPA_INTERACTIVO-FF0000?style=for-the-badge&logo=google-maps&logoColor=white)](https://haroldohorta.github.io/atlas/)
+
+---
 
 ## 📜 El Manifiesto: Una Vida en Tres Actos
 
-Este repositorio constituye la columna vertebral de la trayectoria y legado fotográfico de Haroldo Horta. No es solo un almacenamiento de archivos; es un acto de resistencia técnica y una reconexión con el valor de lo humano a través del lente, tando desde la tierra como desde el aire.
+Este repositorio constituye la columna vertebral de la trayectoria y  el legado fotográfico de Haroldo Horta. No es solo un almacenamiento de archivos; es un acto de resistencia técnica y una reconexión con el valor de lo humano a través del lente, tando desde la tierra como desde el aire.
 
 ---
 
 ## 🏛️ Estructura de Capas (Indexación Activa)
 
-El archivo ha sido reorganizado en la unidad maestra `F:` bajo una lógica de **Capas de Intención**, permitiendo una navegación que cruza la geografía con el peso ético de la imagen.
+El archivo ha sido reorganizado en la unidad maestra `F:` bajo una lógica de **Capas de Intención**, permitiendo una navegación que cruza la geografía con el peso ético de la imagen, la trayectoria y experiencia acumulada durante una vida dedica a la fotografía y posteriormente al vuelo.
 
 ### 🔴 CAPA 01: EL TESTIGO (Corresponsalía 1979 - 1998)
 *El registro del grano de la historia donde el mundo tembló.*
