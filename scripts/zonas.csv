@@ -1,4 +1,4 @@
-zona,gps_lat,gps_lon,descripcion
+zona,lat,lon,descripcion
 nicaragua,12.136,-86.251,Etapa Corresponsalía Guerra
 managua,12.132,-86.250,Base Revolución
 peru,-12.046,-77.042,Etapa Corresponsalía 90s
@@ -16,20 +16,17 @@ planta_litio,-23.473,-68.349,Explotación Litio
 puritama,-22.723,-68.041,Termas de Puritama
 tara,-23.016,-67.288,Salares de Tara
 tatio,-22.331,-68.013,Geysers del Tatio
-tebenquinche,-23.136,-68.275,Laguna Tebenquinche
-valle,-22.923,-68.324,Valle de la Luna
-argentina,-34.603,-58.381,Raíces y Familia
-buenos_aires,-34.603,-58.381,Capital Federal
-junin,-34.593,-60.946,Hangar Parapente / Haroldo
-saladillo,-35.637,-59.777,Provincia de Buenos Aires
-brasil,-15.794,-47.882,Etapa Amazonas
-fordlandia,-3.833,-55.500,Hito Histórico Amazonía
-colombia,4.570,-74.297,Etapa Corresponsalía 2000s
-medellin,6.244,-75.589,Crónica Urbana Medellín
-antartica,-62.2000,-58.9600,Base Científica y Soberanía
-suecia,59.3293,18.0686,Exilio y Fotografía Editorial
-alemania,52.5200,13.4050,Muro de Berlín y Crónica
-europa,50.0000,10.0000,Recorrido Continental
-estrecho_magallanes,-52.6000,-71.3000,Navegación Austral
-punta_arenas,-53.1638,-70.9171,Puerta a la Antártica
-chiloe,-42.622,-73.928,Patrimonio y Mitología del Sur
+tebenquiche,-23.132,-68.258,Laguna Tebenquiche
+valle_muerte,-22.888,-68.204,Cordillera de la Sal
+junin,-34.583,-60.944,Base Junín Argentina
+uyuni,-20.462,-66.824,Salar de Uyuni / Bolivia
+valle_luna,-22.911,-68.323,Valle de la Luna / Atacama
+antartida,-62.200,-58.964,Base Frei / Territorio Antártico
+valparaiso,-33.047,-71.619,Puerto de Valparaíso
+latinoamerica,-20.0,-60.0,Archivo General Latinoamérica
+alemania,51.165,10.451,Publicaciones Europa
+suecia,60.128,18.643,Publicaciones Europa
+europa,48.856,2.352,Archivo General Europa
+chiloe,-42.612,-73.928,Mitología y Paisaje
+estrecho_magallanes,-53.616,-70.912,Navegación Austral
+fordlandia,-3.831,-55.498,Proyecto Ford / Amazonía

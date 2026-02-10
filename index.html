@@ -8,16 +8,18 @@
     <style>
         body, html { margin: 0; padding: 0; height: 100%; background: #0f0f0f; font-family: 'Courier New', monospace; }
         #map { height: 100%; width: 100%; }
-        /* Estilos oscuros para el popup */
+        
+        /* Estilos para el popup */
         .leaflet-popup-content-wrapper { background: #1a1a1a; color: #eee; border: 1px solid #444; border-radius: 2px; }
         .leaflet-popup-tip { background: #1a1a1a; border-top: 1px solid #444; }
-        .popup-img { width: 100%; border: 1px solid #444; margin-top: 5px; object-fit: cover; min-height: 100px; display: block; }
+        .popup-img { width: 100%; border: 1px solid #444; margin-top: 5px; object-fit: cover; min-height: 120px; display: block; background: #000; }
+        
         .btn-portafolio {
-            width: 100%; background: #333; color: #fff; border: 1px solid #555;
-            padding: 8px; cursor: pointer; margin-top: 8px; font-family: inherit; font-size: 11px;
-            text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;
+            width: 100%; background: #222; color: #ff4d4d; border: 1px solid #444;
+            padding: 10px; cursor: pointer; margin-top: 10px; font-family: inherit; font-size: 11px;
+            text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; font-weight: bold;
         }
-        .btn-portafolio:hover { background: #555; border-color: #888; }
+        .btn-portafolio:hover { background: #ff4d4d; color: #000; border-color: #fff; }
     </style>
 </head>
 <body>
@@ -26,7 +28,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-    // 1. Iniciar Mapa (Centrado globalmente para ver todo)
+    // 1. Iniciar Mapa centrado en Sudamérica
     const map = L.map('map').setView([-20, -60], 3);
 
     // 2. Capa Base Oscura
@@ -36,34 +38,39 @@
         maxZoom: 19
     }).addTo(map);
 
-    // 3. Colores por Categoría
+    // 3. Colores por Capa (Lógica de Haroldo)
     const getStyle = (capa) => {
-        if(capa && capa.includes('Corresponsal')) return {color: "#ff4d4d"}; // Rojo Revolución
-        if(capa && capa.includes('Vuelo')) return {color: "#4d94ff"};       // Azul Aire
-        return {color: "#ffdb4d"}; // Amarillo Historia
+        if(capa && capa.includes('Corresponsal')) return {color: "#ff4d4d"}; // Rojo
+        if(capa && capa.includes('Vuelo')) return {color: "#4d94ff"};        // Azul
+        return {color: "#ffdb4d"}; // Amarillo/Editorial
     };
 
-    // 4. Cargar y Corregir Datos
+    // 4. Cargar Datos desde puntos_mapa.json
     fetch('puntos_mapa.json')
         .then(res => res.json())
         .then(data => {
-            console.log("Cargando " + data.length + " puntos...");
-            
             data.forEach(punto => {
-                // --- EL FIX MÁGICO PARA WINDOWS ---
-                // Convierte "fotos\carpeta\foto.webp" a "fotos/carpeta/foto.webp"
+                // Limpieza de ruta para compatibilidad
                 let rutaLimpia = punto.thumb.replace(/\\/g, '/');
-                
-                // Limpieza extra por si acaso
                 if (rutaLimpia.startsWith('./')) rutaLimpia = rutaLimpia.substring(2);
 
-                // Detectar zona para el botón (ej: 'nicaragua')
+                // --- DETECTOR DE ZONA DINÁMICO ---
                 const partes = rutaLimpia.split('/');
-                let carpetaZona = (partes.length > 1) ? partes[1] : 'general';
+                const ignorar = ['fotos', 'seleccion', 'pub_latinoamerica', 'pub_chile', 'pub_europa', 'pub_peru', 'pub_nicaragua'];
+                let carpetaZona = 'general';
 
-                // Crear Marcador
+                // Recorremos de atrás hacia adelante para saltarnos el archivo y encontrar la carpeta real
+                for (let i = partes.length - 2; i >= 0; i--) {
+                    const p = partes[i].toLowerCase();
+                    if (!ignorar.includes(p) && p !== '') {
+                        carpetaZona = partes[i];
+                        break;
+                    }
+                }
+
+                // Crear Marcador con diseño SUR DAO
                 const marker = L.circleMarker([punto.lat, punto.lon], {
-                    radius: 6,
+                    radius: 7,
                     fillColor: getStyle(punto.capa).color,
                     color: "#000",
                     weight: 1,
@@ -71,30 +78,29 @@
                     fillOpacity: 0.8
                 }).addTo(map);
 
-                // Crear Popup con imagen corregida
+                // Popup con enlace preciso a Galería
                 marker.bindPopup(`
-                    <div style="text-align:center; min-width: 160px;">
-                        <div style="font-size:10px; color:#888; margin-bottom:4px; text-transform:uppercase;">
-                            ${punto.capa || 'Archivo'}
+                    <div style="text-align:center; min-width: 180px;">
+                        <div style="font-size:10px; color:#888; margin-bottom:5px; text-transform:uppercase; letter-spacing:1px;">
+                            ${punto.capa || 'REGISTRO'}
                         </div>
                         
-                        <img src="${rutaLimpia}" 
-                             class="popup-img" 
-                             alt="Evidencia Visual"
-                             onerror="this.onerror=null; this.src='https://via.placeholder.com/200x150/333/666?text=CARGANDO...';">
+                        <img src="${rutaLimpia}" class="popup-img" alt="Vista previa"
+                             onerror="this.src='https://via.placeholder.com/200x150/333/666?text=SUR+DAO';">
                         
-                        <div style="font-size:9px; color:#555; margin:6px 0; word-break: break-all;">
-                            ID: ${punto.id}
+                        <div style="font-size:9px; color:#555; margin:8px 0;">
+                            ${punto.id}
                         </div>
 
-                        <button class="btn-portafolio" onclick="window.location.href='galeria.html?zona=${carpetaZona}'">
+                        <button class="btn-portafolio" 
+                                onclick="window.location.href='galeria.html?zona=${carpetaZona}&capa=${punto.capa}'">
                             ABRIR EXPEDIENTE 📂
                         </button>
                     </div>
                 `);
             });
         })
-        .catch(err => console.error("Error crítico cargando JSON:", err));
+        .catch(err => console.error("Error cargando el Atlas:", err));
 </script>
 
 </body>
