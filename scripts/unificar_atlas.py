@@ -16,7 +16,7 @@ CATEGORIAS = {
     "nav_": "Registro Naval"
 }
 
-# Extensiones válidas (Ignoramos archivos basura)
+# Extensiones válidas
 EXTS = ('.jpg', '.jpeg', '.png', '.webp', '.gif')
 
 def escanear_todo():
@@ -28,13 +28,20 @@ def escanear_todo():
 
     # Cargar CSV
     df_zonas = pd.read_csv(RUTA_CSV)
-    # Convertimos a string y quitamos espacios para evitar errores tontos
-    df_zonas['zona'] = df_zonas['zona'].astype(str).str.strip().lower()
     
-    # Mapa de coordenadas en memoria
+    # --- AQUÍ ESTÁ EL TRUCO MAESTRO ---
+    # Convertimos lo que dice el CSV al mismo formato "aplanado" de las carpetas
+    # 1. Minúsculas. 2. Espacios por guiones bajos. 3. Tildes fuera (básico)
+    df_zonas['zona_normalizada'] = df_zonas['zona'].astype(str).str.strip().lower().str.replace(" ", "_")
+    # ----------------------------------
+    
+    # Mapa de coordenadas en memoria (Usamos la clave normalizada para buscar)
     info_zonas = {}
     for _, row in df_zonas.iterrows():
-        info_zonas[row['zona']] = {
+        # Guardamos usando 'san_pedro' como clave, pero mantenemos los datos originales
+        clave = row['zona_normalizada']
+        info_zonas[clave] = {
+            'nombre_real': row['zona'], # Para mostrar "San Pedro" bonito en el mapa
             'lat': float(row['lat']), 
             'lon': float(row['lon']), 
             'desc': row['descripcion']
@@ -44,9 +51,8 @@ def escanear_todo():
 
     # Recorrer el disco
     for root, dirs, files in os.walk(RUTA_FOTOS):
-        # Nombre real de la carpeta en el disco (puede tener mayúsculas)
         carpeta_real = os.path.basename(root)
-        nombre_lower = carpeta_real.lower()
+        nombre_lower = carpeta_real.lower() # Esto ya viene con guiones bajos del script anterior
         
         # Detectar Zona
         zona_detectada = nombre_lower
@@ -58,33 +64,30 @@ def escanear_todo():
                 zona_detectada = nombre_lower.replace(pre, "")
                 break
         
-        # ¿Esta carpeta es una zona válida del CSV?
+        # ¿Esta carpeta coincide con alguna del CSV (normalizado)?
         if zona_detectada in info_zonas:
             datos = info_zonas[zona_detectada]
             
-            # Filtrar fotos válidas (ignorando basura)
             fotos_validas = [f for f in files if f.lower().endswith(EXTS)]
             
             if fotos_validas:
-                print(f"  ✅ Zona Detectada: {zona_detectada.upper()} ({len(fotos_validas)} fotos)")
+                # Usamos el nombre bonito del CSV para el print
+                print(f"  ✅ Zona Rescatada: {datos['nombre_real']} ({len(fotos_validas)} fotos)")
             
             for foto in fotos_validas:
-                # TRUCO: Construimos la ruta RELATIVA exacta tal cual está en el disco
-                # Esto arregla el problema de Linux vs Windows
                 ruta_completa = os.path.join(root, foto)
                 ruta_relativa = os.path.relpath(ruta_completa, BASE_DIR).replace("\\", "/")
                 
-                # Excluir archivos que empiecen con punto (ocultos) o '._' (mac/linux trash)
-                if foto.startswith(".") or foto.startswith("._"):
-                    continue
+                if foto.startswith(".") or foto.startswith("._"): continue
 
                 todos_los_puntos.append({
                     "id": foto,
-                    "zona": zona_detectada,
+                    "zona": zona_detectada, # Clave técnica (san_pedro) para filtrar
+                    "titulo": datos['nombre_real'], # Título bonito (San Pedro)
                     "capa": categoria_detectada,
                     "lat": datos['lat'],
                     "lon": datos['lon'],
-                    "thumb": ruta_relativa, # Ruta exacta para GitHub
+                    "thumb": ruta_relativa,
                     "descripcion": datos['desc']
                 })
 
@@ -92,7 +95,7 @@ def escanear_todo():
     with open(ARCHIVO_SALIDA, 'w', encoding='utf-8') as f:
         json.dump(todos_los_puntos, f, indent=4, ensure_ascii=False)
 
-    print(f"\n✨ BASE DE DATOS REPARADA: {len(todos_los_puntos)} imágenes listas para despegue.")
+    print(f"\n✨ BASE DE DATOS REPARADA: {len(todos_los_puntos)} imágenes listas.")
 
 if __name__ == "__main__":
     escanear_todo()
