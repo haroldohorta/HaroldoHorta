@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/banner_principal.jpg" width="100%" alt="Haroldo Horta - Archivo Visual">
+  <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/banner_principal.webp" width="100%" alt="Haroldo Horta - Archivo Visual">
   
   ### 📷 "La cámara no es un accesorio, es una herramienta de combate y memoria."
   
