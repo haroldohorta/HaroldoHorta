@@ -1,77 +1,60 @@
-#  Haroldo Horta: Atlas Digital y Soberanía Visual
-> *"Desde el corazon de la revolución Sandinista en Nicaragua al silencio infinito de Atacama. Un archivo rescatado para no olvidar el vuelo ni la dignidad humana."
-
-> **⚠️ ATENCIÓN VISITAS:** Este es el almacén de código. Para entrar a la Experiencia Visual, haz clic aquí:
-
-[![VER MAPA VIVO](https://img.shields.io/badge/VER_MAPA_INTERACTIVO-FF0000?style=for-the-badge&logo=google-maps&logoColor=white)](https://haroldohorta.github.io/atlas/)
+# 🗺️ SUR DAO: El Atlas de Haroldo Horta
+### *Archivo de Memoria Visual, Cartografía Social y Libertad Creativa*
+### *Visual Memory Archive, Social Cartography & Creative Freedom*
 
 ---
 
-## 📜 El Manifiesto: Una Vida en Tres Actos
+## 🇪🇸 Perspectiva Editorial / Editorial Perspective
+**SUR DAO** es un esfuerzo de curaduría que trasciende la imagen. Este atlas documenta puntos de inflexión histórica en América Latina, capturando la tensión entre el poder, la labor de prensa internacional y la realidad comunitaria. 
 
-Este repositorio constituye la columna vertebral de la trayectoria y  el legado fotográfico de Haroldo Horta. No es solo un almacenamiento de archivos; es un acto de resistencia técnica y una reconexión con el valor de lo humano a través del lente, tando desde la tierra como desde el aire.
-
----
-
-## 🏛️ Estructura de Capas (Indexación Activa)
-
-El archivo ha sido reorganizado en la unidad maestra `F:` bajo una lógica de **Capas de Intención**, permitiendo una navegación que cruza la geografía con el peso ético de la imagen, la trayectoria y experiencia acumulada durante una vida dedica a la fotografía y posteriormente al vuelo.
-
-### 🔴 CAPA 01: EL TESTIGO (Corresponsalía 1979 - 1998)
-*El registro del grano de la historia donde el mundo tembló.*
-
-| Región | Hitos Visuales y Conflictos | Archivos de Referencia |
-| :--- | :--- | :--- |
-| **🇳🇮 Nicaragua** | Brigadas Telcor, Hospital de Managua, La Montaña. | `soldado_herido.JPG`, `ortega.JPG`, `historica.JPG` |
-| **🇵🇪 Perú** | Captura de Abimael Guzmán, Coche Bomba, Epidemia de Cólera. | `Verano_Sangriento_1997.jpg`, `Fujimori_1991.jpg` |
-| **🇨🇴 Colombia** | Pulso urbano y dinámicas sociales en Medellín. | `pub_medellin_root` |
-| **🇨🇱 Chile (Lota)** | El fin de la era del carbón y la resistencia minera. | `seleccion_lota_01.jpg` |
-
-### 🟡 CAPA 02: EL AUTOR (Editorial y Patrimonio)
-*La construcción del relato nacional y la arqueología industrial.*
-
-- **Brasil (Fordlandia):** Registro del sueño fallido de Henry Ford en el Amazonas (`fordlandia_01-18.JPG`).
-- **Chile Industrial:** La planta de Litio, el Estrecho de Magallanes y la Antártica.
-- **Obra Publicada:** Portadas de revistas *Caretas*, *Paula*, *AfoCo* y Libros (*Faros de Chile*, *Chiloé*, *Esmeralda*).
-
-### 🔵 CAPA 03: EL NÓMADE (Libre Vuelo y Síntesis)
-*Habitar el territorio desde el aire: La perspectiva del Paratrike y el Dron.*
-
-- **Bolivia (Salar de Uyuni):** Panorámicas, reflejos y la abstracción del salar.
-- **Chile (Atacama):** San Pedro, Valle de la Luna, Tebenquinche y Lagunas Altiplánicas.
-- **Tecnología:** Integración de Dron como compañero de vuelo y explorador de formas de vida alternativas.
+**SUR DAO** is a curatorial effort that transcends the visual. This atlas documents historical turning points in Latin America, capturing the tension between power, international press work, and communal reality.
 
 ---
 
-## 🧭 Infraestructura Técnica
+## 📂 Colecciones Especiales / Special Collections
 
-### 📍 El Mapa Maestro (SIG)
-El corazón del proyecto es un visualizador geográfico basado en **Leaflet** que vincula cada archivo de la unidad `F:` con su coordenada exacta. 
-- **Inyección GPS:** Datos extraídos vía Adobe Bridge para situar al usuario en el lugar del evento.
-- **Capas Dinámicas:** Opción de visualizar por intención (Corresponsal, Editorial o Vuelo).
+### 🛡️ 1. Hitos Geopolíticos & Prensa (Geopolitical Milestones)
+Registros de alto impacto realizados para medios internacionales como **Der Spiegel**.
+- **Nicaragua:** La posrevolución y las transiciones políticas vistas desde el corazón del proceso.
+- **Perú:** La captura de Abimael Guzmán y el asedio a la Embajada de Japón (1996).
 
-### 🗄️ El Cerebro: `haroldo_indice.db`
-Base de datos SQLite que indexa los 28TB de archivo maestro, permitiendo búsquedas por:
-- **Metadatos:** Fecha, cámara, ISO y locación.
-- **Etiquetas Éticas:** Clasificación por hito histórico o valor documental.
+### 🤝 2. Etnografía y Resistencia (Ethnography & Resistance)
+El registro de lo que no debió ser visto: el conflicto Pehuenche y la vida en Peine.
+- **Crónica de la expulsión:** La tensión de los 90 entre autoridades intermedias ("Huincas") y la acogida de las bases comunitarias que protegieron al fotógrafo.
 
----
+### ⚓ 3. Travesía y Soberanía (Voyages & Sovereignty)
+- **Faros de Chile:** El registro exhaustivo de la red de faros, de norte a sur.
+- **Buque Escuela Esmeralda:** La vida a bordo, la travesía mundial y el encuentro con el portaaviones USS Ronald Reagan.
 
-## 🏛️ Validación Internacional
-La mirada de Haroldo ha sido el lente de medios globales, validando una vida dedicada al registro de calidad:
-
-| Bloque Editorial | Medios Destacados |
-| :--- | :--- |
-| **Prensa Europea** | *Stern*, *Folket i Bild*, *Zeitenspiegel* (Suecia/Alemania). |
-| **Prensa Latinoamérica** | *Caretas*, *Paula*, *Página/12*, *La Tercera*. |
-| **Patrimonio** | *Kactus*, *UNESCO*, *Armada de Chile*. |
+### 🦅 4. Selección del Autor: Libertad Creativa (Author's Choice)
+Esta sección rescata el trabajo más íntimo y autogestionado de Haroldo.
+- **Desde el Aire:** Fotografía aérea en libertad, capturando la geometría del territorio desde su propia mirada y vuelo.
+- **Desde la Tierra:** La curiosidad errante donde el fotógrafo no responde a un editor, sino a la esencia del momento.
 
 ---
 
-## 🚀 Próximos Pasos
-- [ ] **Build v1.0:** Implementar el selector de capas en el mapa interactivo.
-- [ ] **Inyección de Relatos:** Vincular audios/textos de Haroldo a las fotos de Nicaragua y Perú.
-- [ ] **Galería Liviana:** Generación de miniaturas `.webp` para navegación fluida.
+## ⚙️ Arquitectura Técnica / Technical Architecture
+El sistema está diseñado para la **soberanía de datos**.
+- **Motor:** Python 3 + Pillow para extracción de metadatos.
+- **Interfaz:** Leaflet.js para cartografía interactiva y visualización de alta velocidad (WebP).
+- **Metadata:** Sincronización directa con los campos de "Descripción" y "Rating" de **Adobe Bridge/Lightroom**.
 
 ---
-*Este proyecto es custodiado por la comunidad SUR DAO en Ituzaingó, 2026.*
+
+## 📖 El "No-Registro" y la Expulsión / The "Non-Record" & Expulsion
+Este archivo incluye crónicas de lo que no debió ser visto. 
+> *"A los 10 días, llegó la autoridad. El 'huinca' debía irse. Los registros del dirigente molesto son el testimonio de la barrera entre el forastero y la comunidad que lo había acogido con humanidad."*
+
+---
+
+## 📬 Contacto / Contact
+Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de alta resolución (TIFF) o conocer más sobre las crónicas:
+
+- **Haroldo Horta:** [haroldohorta.com](http://haroldohorta.com) | [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
+- **Desarrollo & Curaduría:** [Tu Nombre/GitHub]
+- **Ubicación Actual:** Junín, Argentina (Club de Paramotores Laguna de Gómez).
+
+---
+
+> *"Las mejores tomas no fueron encargos; fueron actos de libertad."*
+> **Desarrollado con conciencia y posicionamiento en medio de una tormenta en Junín, 2026.**
