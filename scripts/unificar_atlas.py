@@ -2,13 +2,15 @@ import os
 import pandas as pd
 import json
 
-# ================= CONFIGURACIÓN =================
+# ==========================================
+# 🛠️ CONFIGURACIÓN DE RUTAS Y CATEGORÍAS
+# ==========================================
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUTA_FOTOS = os.path.join(BASE_DIR, "fotos")
 RUTA_CSV = os.path.join(BASE_DIR, "data", "zonas.csv")
 ARCHIVO_SALIDA = os.path.join(BASE_DIR, "data", "puntos_mapa.json")
 
-# Diccionario de categorías
+# Diccionario de prefijos -> Nombres bonitos para el Atlas
 CATEGORIAS = {
     "pub_": "Crónica & Etnografía",
     "nomad_": "Bitácora Nómada",
@@ -16,74 +18,74 @@ CATEGORIAS = {
     "nav_": "Registro Naval"
 }
 
-# Extensiones válidas
+# Extensiones de imagen que vamos a indexar
 EXTS = ('.jpg', '.jpeg', '.png', '.webp', '.gif')
 
 def escanear_todo():
-    print("🚀 Iniciando Protocolo de Rescate y Sincronización...")
+    print("🚀 Iniciando Protocolo de Sincronización SUR DAO...")
 
     if not os.path.exists(RUTA_CSV):
-        print("❌ ERROR: No encuentro data/zonas.csv")
+        print(f"❌ ERROR: No se encuentra el archivo maestro en: {RUTA_CSV}")
         return
 
-    # Cargar CSV
-    df_zonas = pd.read_csv(RUTA_CSV)
-    
-    # --- AQUÍ ESTÁ EL TRUCO MAESTRO ---
-    # Convertimos lo que dice el CSV al mismo formato "aplanado" de las carpetas
-    # 1. Minúsculas. 2. Espacios por guiones bajos. 3. Tildes fuera (básico)
-    df_zonas['zona_normalizada'] = df_zonas['zona'].astype(str).str.strip().lower().str.replace(" ", "_")
-    # ----------------------------------
-    
-    # Mapa de coordenadas en memoria (Usamos la clave normalizada para buscar)
-    info_zonas = {}
-    for _, row in df_zonas.iterrows():
-        # Guardamos usando 'san_pedro' como clave, pero mantenemos los datos originales
-        clave = row['zona_normalizada']
-        info_zonas[clave] = {
-            'nombre_real': row['zona'], # Para mostrar "San Pedro" bonito en el mapa
-            'lat': float(row['lat']), 
-            'lon': float(row['lon']), 
-            'desc': row['descripcion']
-        }
+    # 1. CARGAR Y NORMALIZAR CSV
+    try:
+        df_zonas = pd.read_csv(RUTA_CSV)
+        # Limpieza profunda: quitamos espacios, pasamos a minúsculas y reemplazamos espacios por guiones
+        # El .str es vital para que Pandas sepa que operamos sobre texto
+        df_zonas['zona_norm'] = df_zonas['zona'].astype(str).str.strip().str.lower().str.replace(" ", "_")
+        
+        # Mapa de búsqueda: { 'san_pedro': {lat, lon, desc, nombre_bonito}, ... }
+        info_zonas = {}
+        for _, row in df_zonas.iterrows():
+            clave = row['zona_norm']
+            info_zonas[clave] = {
+                'nombre_real': row['zona'],
+                'lat': float(row['lat']), 
+                'lon': float(row['lon']), 
+                'desc': row['descripcion']
+            }
+    except Exception as e:
+        print(f"❌ Error procesando el CSV: {e}")
+        return
 
     todos_los_puntos = []
 
-    # Recorrer el disco
+    # 2. ESCANEO DEL DISCO (F:\fotos)
     for root, dirs, files in os.walk(RUTA_FOTOS):
-        carpeta_real = os.path.basename(root)
-        nombre_lower = carpeta_real.lower() # Esto ya viene con guiones bajos del script anterior
+        carpeta_actual = os.path.basename(root)
+        nombre_lower = carpeta_actual.lower()
         
-        # Detectar Zona
+        # Por defecto
         zona_detectada = nombre_lower
         categoria_detectada = "Archivo General"
         
-        for pre, cat in CATEGORIAS.items():
-            if nombre_lower.startswith(pre):
-                categoria_detectada = cat
-                zona_detectada = nombre_lower.replace(pre, "")
+        # Identificar categoría por prefijo (pub_, fly_, etc)
+        for prefijo, nombre_cat in CATEGORIAS.items():
+            if nombre_lower.startswith(prefijo):
+                categoria_detectada = nombre_cat
+                zona_detectada = nombre_lower.replace(prefijo, "")
                 break
         
-        # ¿Esta carpeta coincide con alguna del CSV (normalizado)?
+        # 3. EMPAREJAMIENTO (Match con el CSV)
         if zona_detectada in info_zonas:
             datos = info_zonas[zona_detectada]
             
-            fotos_validas = [f for f in files if f.lower().endswith(EXTS)]
+            # Filtramos solo imágenes reales
+            fotos_validas = [f for f in files if f.lower().endswith(EXTS) and not f.startswith(".")]
             
             if fotos_validas:
-                # Usamos el nombre bonito del CSV para el print
-                print(f"  ✅ Zona Rescatada: {datos['nombre_real']} ({len(fotos_validas)} fotos)")
+                print(f"  ✅ Sincronizado: {datos['nombre_real']} [{categoria_detectada}] -> {len(fotos_validas)} fotos.")
             
             for foto in fotos_validas:
+                # Construimos la ruta relativa para la web (GitHub usa '/')
                 ruta_completa = os.path.join(root, foto)
                 ruta_relativa = os.path.relpath(ruta_completa, BASE_DIR).replace("\\", "/")
                 
-                if foto.startswith(".") or foto.startswith("._"): continue
-
                 todos_los_puntos.append({
                     "id": foto,
-                    "zona": zona_detectada, # Clave técnica (san_pedro) para filtrar
-                    "titulo": datos['nombre_real'], # Título bonito (San Pedro)
+                    "zona": zona_detectada,
+                    "titulo": datos['nombre_real'],
                     "capa": categoria_detectada,
                     "lat": datos['lat'],
                     "lon": datos['lon'],
@@ -91,11 +93,13 @@ def escanear_todo():
                     "descripcion": datos['desc']
                 })
 
-    # Guardar JSON
-    with open(ARCHIVO_SALIDA, 'w', encoding='utf-8') as f:
-        json.dump(todos_los_puntos, f, indent=4, ensure_ascii=False)
-
-    print(f"\n✨ BASE DE DATOS REPARADA: {len(todos_los_puntos)} imágenes listas.")
+    # 4. GUARDAR RESULTADOS
+    try:
+        with open(ARCHIVO_SALIDA, 'w', encoding='utf-8') as f:
+            json.dump(todos_los_puntos, f, indent=4, ensure_ascii=False)
+        print(f"\n✨ ÉXITO: Atlas actualizado con {len(todos_los_puntos)} registros en {ARCHIVO_SALIDA}")
+    except Exception as e:
+        print(f"❌ Error al guardar el JSON: {e}")
 
 if __name__ == "__main__":
     escanear_todo()
