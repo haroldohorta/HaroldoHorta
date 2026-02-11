@@ -59,18 +59,18 @@ Este archivo incluye crónicas de lo que no debió ser visto.
 
 ---
 
-## 📬 Contacto / Contact
-Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de alta resolución (TIFF) o conocer más sobre las crónicas:
-
-- **Haroldo Horta:** [haroldohorta.com](http://haroldohorta.com) | [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
-- **Desarrollo & Curaduría:** [Tu Nombre/GitHub]
-- **Ubicación Actual:** Junín, Argentina (Club de Paramotores Laguna de Gómez).
-
----
-
----
-
 ### 🕊️ Memoria y Raíces
 Este archivo se organiza y custodia desde **Junín, Argentina**. Es un puente tendido entre el pasado combatiente en Nicaragua y el presente en la pampa. 
 
 *Dedicado a quienes nos dieron la raíz para volar, permitiendo que hoy este legado sea preservado con la dignidad que merece.*
+
+---
+
+## 📬 Contacto / Contact
+Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de alta resolución (TIFF) o conocer más sobre las crónicas:
+
+- **Haroldo Horta:** [haroldohorta.com](http://haroldohorta.com) | 
+- **Desarrollo & Curaduría:** [TIANHH77/GitHub]
+- **Ubicación Actual:** Junín, Argentina (Club de Paramotores Laguna de Gómez).
+
+---
