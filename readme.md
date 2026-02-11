@@ -12,6 +12,9 @@
 
 ---
 
+### 🌍 [EXPLORAR EL ATLAS INTERACTIVO AQUÍ](https://haroldohorta.github.io/atlas/)
+
+
 # 🗺️ SUR DAO: El Atlas de Haroldo Horta
 ### *Archivo de Memoria Visual, Cartografía Social y Libertad Creativa*
 ### *Visual Memory Archive, Social Cartography & Creative Freedom*
@@ -83,4 +86,6 @@ Este proyecto se organiza y custodia desde **Junín, Argentina**. Es un puente t
 *Dedicado a quienes nos dieron la raíz para volar, permitiendo que hoy este legado sea preservado con la dignidad que merece.*
 
 ---
+
+### 🌍 [EXPLORAR EL ATLAS INTERACTIVO AQUÍ](https://haroldohorta.github.io/atlas/)
 > **Desarrollado consentido en medio de una tormenta en Junín, 2026.**
