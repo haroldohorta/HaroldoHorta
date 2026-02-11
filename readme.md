@@ -1,24 +1,26 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/banner_principal.webp" width="33%" alt="Haroldo Horta - Archivo Visual">
   
-   📷 "Memoria viva, al rescate de lo humano" 📷
-  <div align="center">
-  *Registro histórico capturado por Haroldo Horta durante sus años de servicio a la Revolución Sandinista y su labor como corresponsal internacional.*
+  <br>
+  
+  📷 **"Memoria viva, al rescate de lo humano"** 📷
+  
+  <p><i>Registro histórico capturado por Haroldo Horta durante sus años de servicio a la Revolución Sandinista y su labor como corresponsal internacional.</i></p>
 
   [![Status](https://img.shields.io/badge/Status-Activo-success.svg)]()
   [![Region](https://img.shields.io/badge/Región-Latinoamérica-blue.svg)]()
   [![Format](https://img.shields.io/badge/Archivo-TIFF_Master-orange.svg)]()
+
+  <br>
+
+  <a href="https://haroldohorta.github.io/atlas/">
+    <b>[ 🌍 ACCEDER AL ATLAS 🌍 / 🌍 ACCESS THE ATLAS 🌍 ]</b>
+  </a>
 </div>
 
- 
-<p align="center">
-  <a href="https://haroldohorta.github.io/atlas/">
-    <b>[ 🌍 ACCEDER AL ATLAS 🌍/ 🌍 ACCESS THE ATLAS 🌍 ]</b>
-  </a>
-</p>
+---
 
-
- 🗺️ SUR DAO: El Atlas de Haroldo Horta
+# 🗺️ SUR DAO: El Atlas de Haroldo Horta
 ### *Archivo de Memoria Visual, Cartografía Social y Libertad Creativa*
 ### *Visual Memory Archive, Social Cartography & Creative Freedom*
 
@@ -49,31 +51,29 @@ El registro de lo que no debió ser visto: el conflicto Pehuenche y la vida en e
 ### 🦅 4. Selección del Autor: Libertad Creativa (Author's Choice)
 Esta sección rescata el trabajo más íntimo y autogestionado de Haroldo.
 - **Desde el Aire:** Fotografía aérea en libertad, capturando la geometría del territorio desde su propia mirada y vuelo en paramotor.
-- **Desde la Tierra:** La curiosidad errante donde el fotógrafo no responde a un editor, sino a la esencia del momento.
+
+---
+
+## ⚖️ Licencia / License
+Este archivo se publica bajo la licencia **Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.
+
+- **Atribución (BY):** Debe dar crédito de manera adecuada a Haroldo Horta.
+- **No Comercial (NC):** No se permite el uso de este material con fines comerciales.
+- **Sin Derivadas (ND):** No se permite la distribución de material modificado, recortes o filtros que alteren la obra original.
 
 ---
 
 ## ⚙️ Arquitectura Técnica / Technical Architecture
 El sistema está diseñado para la **soberanía de datos**.
-- **Motor:** Python 3 + Pillow para extracción de metadatos de archivos TIFF.
-- **Interfaz:** Leaflet.js para cartografía interactiva y visualización de alta velocidad mediante formato **WebP**.
-- **Metadata:** Sincronización directa con los campos de "Descripción" y "Rating" de Adobe Bridge/Lightroom.
+- **Motor:** Python 3 + Pillow para extracción de metadatos.
+- **Interfaz:** Leaflet.js para cartografía interactiva.
+- **Metadata:** Sincronización con Adobe Bridge/Lightroom.
 
 ---
-## 📖 El "No-Registro" y la Expulsión / The "Non-Record" & Expulsion
-Este archivo incluye crónicas de lo que no debió ser visto. 
-> *"A los 10 días, llegó la autoridad. El 'huinca' debía irse. Los registros del dirigente molesto son el testimonio de la barrera entre el forastero y la comunidad que lo había acogido con humanidad."*
 
----
-###  Memoria y Raíces
-Este proyecto se organiza y custodia desde **Junín, Argentina**. Es un puente tendido entre el pasado combatiente y el presente en la pampa. 
-*Dedicado a quienes nos dieron la raíz para volar, permitiendo que hoy este legado sea preservado con la dignidad que merece.*
-
----
 ## 📬 Contacto / Contact
-Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de alta resolución (TIFF) o conocer más sobre las crónicas:
+Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de alta resolución (TIFF):
 
-- **Haroldo Horta:** https://haroldohorta.github.io/atlas/| [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
-- **Desarrollo & Curaduría:** [TIANHH77/GitHub]
-- **Ubicación Actual:** Junín, Argentina (Club de Paramotores Laguna de Gómez).
-> **Desarrollado consentido en medio de una tormenta en Junín, 2026.**
+- **Web:** [haroldohorta.github.io/atlas/](https://haroldohorta.github.io/atlas/)
+- **Email:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
+- **Ubicación Actual:** Junín, Argentina.
