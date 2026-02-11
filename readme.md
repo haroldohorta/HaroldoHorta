@@ -1,77 +1,58 @@
-#  Haroldo Horta: Atlas Digital y Soberanía Visual
-> *"Desde el corazon de la revolución Sandinista en Nicaragua al silencio infinito de Atacama. Un archivo rescatado para no olvidar el vuelo ni la dignidad humana."
-
-> **⚠️ ATENCIÓN VISITAS:** Este es el almacén de código. Para entrar a la Experiencia Visual, haz clic aquí:
-
-[![VER MAPA VIVO](https://img.shields.io/badge/VER_MAPA_INTERACTIVO-FF0000?style=for-the-badge&logo=google-maps&logoColor=white)](https://haroldohorta.github.io/atlas/)
+# 🗺️ SUR DAO: El Atlas de Haroldo Horta
+### *Preservación Digital y Cartografía Narrativa / Digital Preservation & Narrative Cartography*
 
 ---
 
-## 📜 El Manifiesto: Una Vida en Tres Actos
+## 🇪🇸 Resumen del Proyecto
+**SUR DAO** es un atlas interactivo diseñado para rescatar y organizar el inmenso legado fotográfico de **Haroldo Horta**. A través de una interfaz geoespacial, el proyecto conecta décadas de registros —desde corresponsalías de guerra en Nicaragua hasta la travesía del Buque Escuela Esmeralda— con sus coordenadas exactas y las anécdotas humanas que les dieron vida.
 
-Este repositorio constituye la columna vertebral de la trayectoria y  el legado fotográfico de Haroldo Horta. No es solo un almacenamiento de archivos; es un acto de resistencia técnica y una reconexión con el valor de lo humano a través del lente, tando desde la tierra como desde el aire.
+Este proyecto no es solo una galería; es un **sistema de preservación activa** que transforma archivos maestros (TIFF) y metadatos de Adobe en una experiencia de exploración global.
 
----
-
-## 🏛️ Estructura de Capas (Indexación Activa)
-
-El archivo ha sido reorganizado en la unidad maestra `F:` bajo una lógica de **Capas de Intención**, permitiendo una navegación que cruza la geografía con el peso ético de la imagen, la trayectoria y experiencia acumulada durante una vida dedica a la fotografía y posteriormente al vuelo.
-
-### 🔴 CAPA 01: EL TESTIGO (Corresponsalía 1979 - 1998)
-*El registro del grano de la historia donde el mundo tembló.*
-
-| Región | Hitos Visuales y Conflictos | Archivos de Referencia |
-| :--- | :--- | :--- |
-| **🇳🇮 Nicaragua** | Brigadas Telcor, Hospital de Managua, La Montaña. | `soldado_herido.JPG`, `ortega.JPG`, `historica.JPG` |
-| **🇵🇪 Perú** | Captura de Abimael Guzmán, Coche Bomba, Epidemia de Cólera. | `Verano_Sangriento_1997.jpg`, `Fujimori_1991.jpg` |
-| **🇨🇴 Colombia** | Pulso urbano y dinámicas sociales en Medellín. | `pub_medellin_root` |
-| **🇨🇱 Chile (Lota)** | El fin de la era del carbón y la resistencia minera. | `seleccion_lota_01.jpg` |
-
-### 🟡 CAPA 02: EL AUTOR (Editorial y Patrimonio)
-*La construcción del relato nacional y la arqueología industrial.*
-
-- **Brasil (Fordlandia):** Registro del sueño fallido de Henry Ford en el Amazonas (`fordlandia_01-18.JPG`).
-- **Chile Industrial:** La planta de Litio, el Estrecho de Magallanes y la Antártica.
-- **Obra Publicada:** Portadas de revistas *Caretas*, *Paula*, *AfoCo* y Libros (*Faros de Chile*, *Chiloé*, *Esmeralda*).
-
-### 🔵 CAPA 03: EL NÓMADE (Libre Vuelo y Síntesis)
-*Habitar el territorio desde el aire: La perspectiva del Paratrike y el Dron.*
-
-- **Bolivia (Salar de Uyuni):** Panorámicas, reflejos y la abstracción del salar.
-- **Chile (Atacama):** San Pedro, Valle de la Luna, Tebenquinche y Lagunas Altiplánicas.
-- **Tecnología:** Integración de Dron como compañero de vuelo y explorador de formas de vida alternativas.
+### 🚀 Características Técnicas
+- **Sincronización Automática:** Motor en Python que escanea la estructura de carpetas y genera la base de datos JSON.
+- **Aspirador de Metadatos:** Integración con Adobe Bridge/Lightroom para extraer relatos y calificaciones (ratings) directamente de los archivos.
+- **Optimización WebP:** Flujo de trabajo preparado para visualización de alta velocidad.
+- **Interfaz Interactiva:** Mapas con Leaflet.js y clusters inteligentes de imágenes.
 
 ---
 
-## 🧭 Infraestructura Técnica
+## 🇺🇸 Project Overview
+**SUR DAO** is an interactive digital atlas created to preserve and organize the vast photographic legacy of **Haroldo Horta**. Using a geospatial interface, the project connects decades of records—ranging from war correspondence in Nicaragua to the world voyage of the Buque Escuela Esmeralda—with their precise coordinates and the human anecdotes behind them.
 
-### 📍 El Mapa Maestro (SIG)
-El corazón del proyecto es un visualizador geográfico basado en **Leaflet** que vincula cada archivo de la unidad `F:` con su coordenada exacta. 
-- **Inyección GPS:** Datos extraídos vía Adobe Bridge para situar al usuario en el lugar del evento.
-- **Capas Dinámicas:** Opción de visualizar por intención (Corresponsal, Editorial o Vuelo).
+This project is not just a gallery; it is an **active preservation system** that transforms master files (TIFF) and Adobe metadata into a global exploration experience.
 
-### 🗄️ El Cerebro: `haroldo_indice.db`
-Base de datos SQLite que indexa los 28TB de archivo maestro, permitiendo búsquedas por:
-- **Metadatos:** Fecha, cámara, ISO y locación.
-- **Etiquetas Éticas:** Clasificación por hito histórico o valor documental.
-
----
-
-## 🏛️ Validación Internacional
-La mirada de Haroldo ha sido el lente de medios globales, validando una vida dedicada al registro de calidad:
-
-| Bloque Editorial | Medios Destacados |
-| :--- | :--- |
-| **Prensa Europea** | *Stern*, *Folket i Bild*, *Zeitenspiegel* (Suecia/Alemania). |
-| **Prensa Latinoamérica** | *Caretas*, *Paula*, *Página/12*, *La Tercera*. |
-| **Patrimonio** | *Kactus*, *UNESCO*, *Armada de Chile*. |
+### 🚀 Technical Features
+- **Automatic Sync:** Python-based engine that scans folder structures and generates the JSON database.
+- **Metadata Ingestion:** Direct integration with Adobe Bridge/Lightroom to extract stories and ratings from the files.
+- **WebP Optimization:** High-speed visualization workflow.
+- **Interactive Interface:** Mapping with Leaflet.js and smart image clustering.
 
 ---
 
-## 🚀 Próximos Pasos
-- [ ] **Build v1.0:** Implementar el selector de capas en el mapa interactivo.
-- [ ] **Inyección de Relatos:** Vincular audios/textos de Haroldo a las fotos de Nicaragua y Perú.
-- [ ] **Galería Liviana:** Generación de miniaturas `.webp` para navegación fluida.
+## 📂 Estructura de Archivos / Folder Structure
+El sistema utiliza prefijos inteligentes para categorizar el contenido automáticamente:
+* `pub_`: Crónica & Etnografía / Chronicles & Ethnography.
+* `nomad_`: Bitácora Nómada / Nomad Logbook.
+* `fly_`: Registro Aéreo / Aerial Records.
+* `nav_`: Travesías & Flota Naval / Naval Voyages.
+* `far_`: Faros del Fin del Mundo / Lighthouses.
 
 ---
-*Este proyecto es custodiado por la comunidad SUR DAO en Ituzaingó, 2026.*
+
+## 🛠️ Cómo Actualizar el Atlas / How to Update
+1.  **Organizar:** Coloca las nuevas fotos en `fotos/` usando los prefijos indicados.
+2.  **Sincronizar:** Ejecuta el motor desde la raíz:
+    ```bash
+    python Scripts/unificar_atlas.py
+    ```
+3.  **Desplegar:**
+    ```bash
+    git add .
+    git commit -m "Add new chronicles"
+    git push
+    ```
+
+---
+
+> *"No es solo una foto, es el testimonio de un zurdo que hizo volar gorras en el Ecuador y subió cámaras panorámicas donde nadie más se atrevió."* > 
+> **Desarrollado con ❤️ en medio de una tormenta en Junín.**
