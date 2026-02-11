@@ -1,10 +1,13 @@
-<header style="width: 100%; background: #1a1a1a; text-align: center; border-bottom: 2px solid #333;">
-    <img src="fotos/banner_principal.webp" alt="Haroldo Horta - Atlas" style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; margin: 0 auto;">
-    <div style="padding: 10px; color: white; font-family: 'Arial', sans-serif;">
-        <h1 style="margin: 0; font-size: 1.5rem; letter-spacing: 2px;">SUR DAO: ATLAS DE MEMORIA</h1>
-        <p style="margin: 5px 0 0; font-size: 0.9rem; color: #aaa;">Archivo Visual de Haroldo Horta</p>
-    </div>
-</header>
+{
+  "id": "hist_peru_abimael",
+  "zona": "lima_peru",
+  "lat": -12.115,
+  "lon": -77.026,
+  "titulo": "Captura de Abimael Guzmán",
+  "fecha": "12 de septiembre, 1992",
+  "descripcion": "Registro exclusivo de la caída del líder de Sendero Luminoso. Un hito de la prensa internacional capturado por el lente de Haroldo Horta.",
+  "imagen": "fotos/hist_abimael_captura.webp"
+}
 
 <div id="map" style="height: calc(100vh - 280px); width: 100%;"></div>
   ## 📷 "Memoria de una lucha inalterable"
