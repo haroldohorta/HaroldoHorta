@@ -1,3 +1,15 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/banner_principal.jpg" width="100%" alt="Haroldo Horta - Archivo Visual">
+  
+  ### 📷 "La cámara no es un accesorio, es una herramienta de combate y memoria."
+  
+  [![Status](https://img.shields.io/badge/Status-Activo-success.svg)]()
+  [![Region](https://img.shields.io/badge/Región-Latinoamérica-blue.svg)]()
+  [![Format](https://img.shields.io/badge/Archivo-TIFF_Master-orange.svg)]()
+</div>
+
+---
+
 # 🗺️ SUR DAO: El Atlas de Haroldo Horta
 ### *Archivo de Memoria Visual, Cartografía Social y Libertad Creativa*
 ### *Visual Memory Archive, Social Cartography & Creative Freedom*
