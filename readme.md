@@ -77,10 +77,10 @@ Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de a
 
 ---
 
-### ❤️ Memoria y Raíces
+###  Memoria y Raíces
 Este proyecto se organiza y custodia desde **Junín, Argentina**. Es un puente tendido entre el pasado combatiente y el presente en la pampa. 
 
 *Dedicado a quienes nos dieron la raíz para volar, permitiendo que hoy este legado sea preservado con la dignidad que merece.*
 
 ---
-> **Desarrollado con ❤️ en medio de una tormenta en Junín, 2026.**
+> **Desarrollado consentido en medio de una tormenta en Junín, 2026.**
