@@ -79,7 +79,7 @@ Si eres investigador, autoridad o coleccionista y deseas acceder al archivo de a
 - **Desarrollo & Curaduría:** [TIANHH77/GitHub]
 - **Ubicación Actual:** Junín, Argentina (Club de Paramotores Laguna de Gómez).
 
-### <p align="center">
+
   <a href="https://haroldohorta.github.io/atlas/">
     <b>[ 🌍 ACCEDER AL ATLAS 🌍/ 🌍 ACCESS THE ATLAS 🌍 ]</b>
   </a>
