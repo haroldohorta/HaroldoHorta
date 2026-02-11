@@ -1,11 +1,16 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/banner_principal.webp" width="100%" alt="Haroldo Horta - Archivo Visual">
-  
+<header style="width: 100%; background: #1a1a1a; text-align: center; border-bottom: 2px solid #333;">
+    <img src="fotos/banner_principal.webp" alt="Haroldo Horta - Atlas" style="max-width: 100%; height: auto; max-height: 100px; object-fit: cover; display: block; margin: 0 auto;">
+    <div style="padding: 10px; color: white; font-family: 'Arial', sans-serif;">
+        <h1 style="margin: 0; font-size: 1.5rem; letter-spacing: 2px;">SUR DAO: ATLAS DE MEMORIA</h1>
+        <p style="margin: 5px 0 0; font-size: 0.9rem; color: #aaa;">Archivo Visual de Haroldo Horta</p>
+    </div>
+</header>
+
+<div id="map" style="height: calc(100vh - 280px); width: 100%;"></div>
   ## 📷 "Memoria de una lucha inalterable"
   
   *Registro histórico capturado por Haroldo Horta.*
 </div>
----
 
 # 🗺️ SUR DAO: El Atlas de Haroldo Horta
 ### *Archivo de Memoria Visual, Cartografía Social y Libertad Creativa*
