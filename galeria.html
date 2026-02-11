@@ -3,76 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUR DAO - Galería</title>
+    <title>Expediente Visual | SUR DAO</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    
     <style>
-        body { background: #0a0a0a; color: #eee; font-family: 'Courier New', monospace; padding: 20px; }
-        .nav-bar { margin-bottom: 20px; border-bottom: 1px dashed #444; padding-bottom: 10px; }
-        button { background: #222; color: #fff; border: 1px solid #444; padding: 10px; cursor: pointer; font-family: monospace; }
-        button:hover { background: #444; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-        .item { background: #111; border: 1px solid #222; padding: 15px; border-radius: 4px; display: flex; flex-direction: column; }
-        img { width: 100%; height: 220px; object-fit: cover; border-radius: 2px; background: #222; }
-        .info { margin-top: 12px; flex-grow: 1; }
-        .id-text { font-size: 10px; color: #ff3333; font-weight: bold; display: block; margin-bottom: 5px; }
-        .desc-text { font-size: 14px; color: #ddd; line-height: 1.5; border-left: 2px solid #444; padding-left: 10px; }
-        .capa-tag { font-size: 9px; background: #333; padding: 2px 5px; border-radius: 3px; color: #aaa; margin-bottom: 10px; display: inline-block; }
+        body { background: #0b0b0b; color: #fff; font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 20px; }
+        
+        /* Cabecera Flotante */
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid #ff9f1c; padding-bottom: 15px; margin-bottom: 30px;
+        }
+        h1 { margin: 0; color: #ff9f1c; letter-spacing: 2px; text-transform: uppercase; font-size: 24px; }
+        
+        .btn-volver {
+            text-decoration: none; color: #aaa; border: 1px solid #444; padding: 8px 16px;
+            transition: 0.3s; font-size: 12px; text-transform: uppercase;
+        }
+        .btn-volver:hover { color: #fff; border-color: #ff9f1c; background: #222; }
+
+        /* MASONRY GRID (Estilo Pinterest / Muro de Ladrillos) */
+        .gallery-container {
+            column-count: 4; /* 4 Columnas */
+            column-gap: 15px;
+        }
+        @media (max-width: 1000px) { .gallery-container { column-count: 3; } }
+        @media (max-width: 700px) { .gallery-container { column-count: 2; } }
+
+        .gallery-item {
+            break-inside: avoid; margin-bottom: 15px;
+            position: relative; transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+        .gallery-item:hover { transform: scale(1.02); z-index: 10; }
+        
+        .gallery-item img {
+            width: 100%; height: auto; display: block;
+            border-radius: 4px; border: 1px solid #333;
+        }
+
+        .caption {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 5px; font-size: 10px; opacity: 0; transition: 0.3s;
+            text-align: center;
+        }
+        .gallery-item:hover .caption { opacity: 1; }
     </style>
 </head>
 <body>
-    <div class="nav-bar">
-        <button onclick="window.location.href='index.html'">⬅ VOLVER AL ATLAS</button>
-    </div>
 
-    <h1 id="zona-titulo">...</h1>
-    <div class="grid" id="grid"></div>
+    <header>
+        <h1 id="titulo-zona">CARGANDO...</h1>
+        <a href="index.html" class="btn-volver">← Mapa</a>
+    </header>
 
+    <div class="gallery-container" id="galeria">
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        let zonaBusqueda = urlParams.get('zona');
+        // 1. Configurar Fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Animaciones
+            animated: true,
+            showClass: "f-fadeIn",
+            hideClass: "f-fadeOut",
+            
+            // Toolbar
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: [],
+                    right: ["slideshow", "thumbs", "close"],
+                },
+            },
+        });
 
-        if (!zonaBusqueda) {
-            window.location.href = 'index.html';
-        }
+        // 2. Cargar Datos
+        const params = new URLSearchParams(window.location.search);
+        const zona = params.get('zona');
+        document.getElementById('titulo-zona').innerText = zona ? `EXPEDIENTE: ${zona}` : 'ARCHIVO GLOBAL';
 
-        document.getElementById('zona-titulo').innerText = "EXPEDICIÓN: " + zonaBusqueda.toUpperCase();
-
-        fetch('puntos_mapa.json')
-            .then(r => r.json())
-            .then(fotos => {
-                const container = document.getElementById('grid');
+        fetch('data/puntos_mapa.json')
+            .then(res => res.json())
+            .then(data => {
+                const contenedor = document.getElementById('galeria');
                 
-                // FILTRO INTELIGENTE: Busca la zona en cualquier parte de la ruta del thumb
-                const filtradas = fotos.filter(f => {
-                    const ruta = f.thumb.toLowerCase();
-                    const zona = zonaBusqueda.toLowerCase();
-                    return ruta.includes('/' + zona) || ruta.includes(zona + '/');
-                });
+                // Filtrar por zona
+                const fotos = data.filter(item => !zona || item.zona === zona);
 
-                if (filtradas.length === 0) {
-                    container.innerHTML = `<p>No se encontraron fotos para la zona: <b>${zonaBusqueda}</b></p>`;
+                if (fotos.length === 0) {
+                    contenedor.innerHTML = "<p>No hay imágenes disponibles para esta zona.</p>";
                     return;
                 }
 
-                filtradas.forEach(f => {
-                    // Usamos f.relato que es lo que viene en tu JSON de F:
-                    const relato = f.relato && f.relato !== "Archivo SUR DAO" ? f.relato : "Esperando relato de Haroldo...";
+                fotos.forEach(foto => {
+                    // Crear elemento HTML
+                    const link = document.createElement('a');
+                    link.className = 'gallery-item';
+                    link.href = foto.thumb; // Enlace a la imagen full
+                    link.setAttribute('data-fancybox', 'gallery'); // Activa el efecto
+                    link.setAttribute('data-caption', `${foto.zona.toUpperCase()} - ${foto.descripcion}`);
                     
-                    container.innerHTML += `
-                        <div class="item">
-                            <span class="capa-tag">${f.capa || 'General'}</span>
-                            <a href="${f.thumb}" target="_blank">
-                                <img src="${f.thumb}" alt="${f.id}" onerror="this.src='https://via.placeholder.com/300x200?text=Error+Ruta+Foto'">
-                            </a>
-                            <div class="info">
-                                <span class="id-text">${f.id}</span>
-                                <p class="desc-text">${relato}</p>
-                            </div>
-                        </div>`;
+                    link.innerHTML = `
+                        <img src="${foto.thumb}" loading="lazy" alt="${foto.zona}">
+                        <div class="caption">${foto.id}</div>
+                    `;
+                    
+                    contenedor.appendChild(link);
                 });
-            })
-            .catch(err => {
-                console.error(err);
-                container.innerHTML = "Error al cargar el archivo de datos.";
             });
     </script>
 </body>

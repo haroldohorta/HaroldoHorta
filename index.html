@@ -3,104 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas SUR DAO - Haroldo Horta</title>
+    <title>Atlas SUR DAO | Cluster Edition</title>
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; background: #0f0f0f; font-family: 'Courier New', monospace; }
-        #map { height: 100%; width: 100%; }
+        /* --- ESTILO DARKROOM --- */
+        body, html { margin: 0; padding: 0; height: 100%; background: #0f0f0f; font-family: 'Courier New', monospace; color: #ccc; }
+        #map { height: 100%; width: 100%; background: #0f0f0f; }
+
+        /* Estilos del Popup */
+        .leaflet-popup-content-wrapper { background: #1a1a1a; color: #eee; border: 1px solid #ff9f1c; border-radius: 0; padding: 0; }
+        .leaflet-popup-tip { background: #1a1a1a; border-top: 1px solid #ff9f1c; }
+        .popup-img { width: 100%; height: 140px; object-fit: cover; border-bottom: 1px solid #ff9f1c; display: block; background: #000; }
         
-        /* Estilos para el popup */
-        .leaflet-popup-content-wrapper { background: #1a1a1a; color: #eee; border: 1px solid #444; border-radius: 2px; }
-        .leaflet-popup-tip { background: #1a1a1a; border-top: 1px solid #444; }
-        .popup-img { width: 100%; border: 1px solid #444; margin-top: 5px; object-fit: cover; min-height: 120px; display: block; background: #000; }
-        
+        /* Botón del Popup */
         .btn-portafolio {
-            width: 100%; background: #222; color: #ff4d4d; border: 1px solid #444;
-            padding: 10px; cursor: pointer; margin-top: 10px; font-family: inherit; font-size: 11px;
-            text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; font-weight: bold;
+            width: 100%; background: #222; color: #ff9f1c; padding: 10px; cursor: pointer;
+            text-transform: uppercase; font-weight: bold; font-size: 11px; text-decoration: none;
+            display: block; text-align: center; box-sizing: border-box; transition: 0.3s;
         }
-        .btn-portafolio:hover { background: #ff4d4d; color: #000; border-color: #fff; }
+        .btn-portafolio:hover { background: #ff9f1c; color: #000; }
+
+        /* --- PERSONALIZACIÓN DE LAS BURBUJAS (CLUSTERS) --- */
+        /* Hacemos que los círculos de números sean Naranjas y Negros */
+        .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
+            background-color: rgba(255, 159, 28, 0.2) !important; /* Aureola Naranja */
+        }
+        .marker-cluster div {
+            background-color: #000 !important; /* Centro Negro */
+            color: #ff9f1c !important; /* Texto Naranja */
+            border: 1px solid #ff9f1c;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        
+        /* Leyenda */
+        .legend { position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.8); border: 1px solid #444; padding: 10px; z-index: 1000; font-size: 11px; }
+        .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
     </style>
 </head>
 <body>
 
 <div id="map"></div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-    // 1. Iniciar Mapa centrado en Sudamérica
-    const map = L.map('map').setView([-20, -60], 3);
+<div class="legend">
+    <div><span class="dot" style="background:#ff4d4d;"></span> CRÓNICA</div>
+    <div><span class="dot" style="background:#4d94ff;"></span> AÉREO</div>
+    <div><span class="dot" style="background:#ffdb4d;"></span> NÓMADA</div>
+    <div style="margin-top:5px; color:#777;">* Haz clic en los números para desplegar</div>
+</div>
 
-    // 2. Capa Base Oscura
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+<script>
+    // 1. Mapa Base
+    const map = L.map('map').setView([-22, -68], 4);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &copy; CARTO',
-        subdomains: 'abcd',
-        maxZoom: 19
+        attribution: 'SUR DAO | Haroldo Horta', maxZoom: 19
     }).addTo(map);
 
-    // 3. Colores por Capa (Lógica de Haroldo)
+    // 2. Grupo de Clusters (Aquí ocurre la magia)
+    const markers = L.markerClusterGroup({
+        spiderfyOnMaxZoom: true,  // ESTO HACE LA ESPIRAL
+        showCoverageOnHover: false,
+        zoomToBoundsOnClick: true,
+        animate: true
+    });
+
     const getStyle = (capa) => {
-        if(capa && capa.includes('Corresponsal')) return {color: "#ff4d4d"}; // Rojo
-        if(capa && capa.includes('Vuelo')) return {color: "#4d94ff"};        // Azul
-        return {color: "#ffdb4d"}; // Amarillo/Editorial
+        if(!capa) return "#fff";
+        if(capa.includes('Crónica')) return "#ff4d4d";
+        if(capa.includes('Aéreo') || capa.includes('fly')) return "#4d94ff";
+        if(capa.includes('Nómada')) return "#ffdb4d";
+        return "#ffffff";
     };
 
-    // 4. Cargar Datos desde puntos_mapa.json
-    fetch('puntos_mapa.json')
+    fetch('data/puntos_mapa.json')
         .then(res => res.json())
         .then(data => {
+            console.log("Cargando puntos:", data.length);
+            
             data.forEach(punto => {
-                // Limpieza de ruta para compatibilidad
-                let rutaLimpia = punto.thumb.replace(/\\/g, '/');
-                if (rutaLimpia.startsWith('./')) rutaLimpia = rutaLimpia.substring(2);
+                if (!punto.lat || !punto.lon) return;
 
-                // --- DETECTOR DE ZONA DINÁMICO ---
-                const partes = rutaLimpia.split('/');
-                const ignorar = ['fotos', 'seleccion', 'pub_latinoamerica', 'pub_chile', 'pub_europa', 'pub_peru', 'pub_nicaragua'];
-                let carpetaZona = 'general';
-
-                // Recorremos de atrás hacia adelante para saltarnos el archivo y encontrar la carpeta real
-                for (let i = partes.length - 2; i >= 0; i--) {
-                    const p = partes[i].toLowerCase();
-                    if (!ignorar.includes(p) && p !== '') {
-                        carpetaZona = partes[i];
-                        break;
-                    }
-                }
-
-                // Crear Marcador con diseño SUR DAO
+                // Creamos un marcador circular simple
+                const color = getStyle(punto.capa);
+                
                 const marker = L.circleMarker([punto.lat, punto.lon], {
-                    radius: 7,
-                    fillColor: getStyle(punto.capa).color,
+                    radius: 8,
+                    fillColor: color,
                     color: "#000",
                     weight: 1,
                     opacity: 1,
-                    fillOpacity: 0.8
-                }).addTo(map);
+                    fillOpacity: 0.9
+                });
 
-                // Popup con enlace preciso a Galería
+                // Contenido del Popup
+                const zonaTitulo = punto.zona ? punto.zona.toUpperCase() : 'ZONA';
                 marker.bindPopup(`
-                    <div style="text-align:center; min-width: 180px;">
-                        <div style="font-size:10px; color:#888; margin-bottom:5px; text-transform:uppercase; letter-spacing:1px;">
-                            ${punto.capa || 'REGISTRO'}
+                    <div style="min-width: 180px; text-align: center;">
+                        <div style="font-size:9px; color:#888; margin-bottom:5px; text-transform:uppercase;">
+                            ${punto.capa}
                         </div>
-                        
-                        <img src="${rutaLimpia}" class="popup-img" alt="Vista previa"
-                             onerror="this.src='https://via.placeholder.com/200x150/333/666?text=SUR+DAO';">
-                        
-                        <div style="font-size:9px; color:#555; margin:8px 0;">
-                            ${punto.id}
-                        </div>
-
-                        <button class="btn-portafolio" 
-                                onclick="window.location.href='galeria.html?zona=${carpetaZona}&capa=${punto.capa}'">
-                            ABRIR EXPEDIENTE 📂
-                        </button>
+                        <h3 style="margin: 5px 0; color: #ff9f1c;">${zonaTitulo}</h3>
+                        <img src="${punto.thumb}" class="popup-img" onerror="this.style.display='none'">
+                        <div style="font-size:9px; color:#666; margin:8px 0;">${punto.id}</div>
+                        <a href="galeria.html?zona=${punto.zona}" class="btn-portafolio">ABRIR EXPEDIENTE 📂</a>
                     </div>
                 `);
+
+                // IMPORTANTE: Agregamos el marcador al GRUPO (markers), no directo al mapa
+                markers.addLayer(marker);
             });
+
+            // Al final, agregamos el grupo al mapa
+            map.addLayer(markers);
         })
-        .catch(err => console.error("Error cargando el Atlas:", err));
+        .catch(err => console.error("Error:", err));
 </script>
 
 </body>
