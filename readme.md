@@ -10,10 +10,10 @@
   [![Format](https://img.shields.io/badge/Archivo-TIFF_Master-orange.svg)]()
 </div>
 
----### 🌍
+ 
 <p align="center">
   <a href="https://haroldohorta.github.io/atlas/">
-    <b>[ ACCEDER AL ATLAS / ACCESS THE ATLAS ]</b>
+    <b>[ 🌍ACCEDER AL ATLAS 🌍/ 🌍ACCESS THE ATLAS🌍 ]</b>
   </a>
 </p>
 
