@@ -32,17 +32,20 @@
 ### 🗺️ SUR DAO: El Atlas de Haroldo Horta
 **Archivo de Memoria Visual, Cartografía Social y Libertad Creativa**
 
-**Perspectiva Editorial:** **SUR DAO** es un esfuerzo de curaduría que trasciende la imagen. Este atlas documenta puntos de inflexión histórica en América Latina, capturando la tensión entre el poder, la labor de prensa internacional y la realidad comunitaria. 
+**Perspectiva Editorial:** Este atlas documenta puntos de inflexión histórica en América Latina, capturando la tensión entre el poder y la realidad comunitaria.
 
-**Colecciones Especiales:**
-* **🛡️ Hitos Geopolíticos:** Nicaragua (Revolución), Perú (Abimael Guzmán, Embajada Japón).
-* **🤝 Etnografía y Resistencia:** Conflicto Pehuenche y vida en Atacama (Peine).
-* **⚓ Travesía y Soberanía:** Faros de Chile y Buque Escuela Esmeralda.
-* **🦅 Selección del Autor:** Fotografía aérea en paramotor y libertad creativa.
+**📜 Respeto al Valor Histórico:**
+Este archivo contiene registros de conflictos armados, resistencias indígenas y procesos sociales profundos. Se solicita a los usuarios tratar este material con el respeto que merece la dignidad de las personas retratadas y la gravedad de los hechos históricos.
 
-> *"A los 10 días, llegó la autoridad. El 'huinca' debía irse... el testimonio de la barrera entre el forastero y la comunidad."*
+**📸 Uso en Redes Sociales (Instagram, etc.):**
+Se permite compartir estas imágenes bajo la licencia **CC BY-NC-ND 4.0**, cumpliendo estrictamente:
+1. **Atribución:** Mencionar claramente a **Haroldo Horta / SUR DAO**.
+2. **No Alterar:** Prohibido el uso de filtros, recortes o textos superpuestos que alteren la composición original.
+3. **No Comercial:** Prohibido el uso en cuentas de empresas, marcas o publicidad sin autorización expresa.
 
-[↑ Volver al inicio](#-sur-dao-el-atlas-de-haroldo-horta)
+**📬 Contacto:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
+
+[↑ Volver al inicio](#-español)
 
 ---
 
@@ -52,17 +55,20 @@
 ### 🗺️ SUR DAO: Haroldo Horta's Atlas
 **Visual Memory Archive, Social Cartography & Creative Freedom**
 
-**Editorial Perspective:** **SUR DAO** is a curatorial effort that transcends the visual. This atlas documents historical turning points in Latin America, capturing the tension between power, international press work, and communal reality.
+**Editorial Perspective:** This atlas documents historical turning points in Latin America, capturing the tension between power and communal reality.
 
-**Special Collections:**
-* **🛡️ Geopolitical Milestones:** Nicaragua (Revolution), Peru (Abimael Guzmán, Japanese Embassy).
-* **🤝 Ethnography & Resistance:** Pehuenche conflict and life in Atacama (Peine).
-* **⚓ Voyages & Sovereignty:** Lighthouses of Chile and Training Ship Esmeralda.
-* **🦅 Author's Choice:** Aerial photography (Paramotor) and creative freedom.
+**📜 Respect for Historical Value:**
+This archive contains records of armed conflicts, indigenous resistance, and profound social processes. Users are requested to treat this material with the respect deserved by the dignity of the people portrayed and the gravity of the historical events.
 
-> *"After 10 days, the authority arrived. The 'huinca' had to leave... the testimony of the barrier between the stranger and the community."*
+**📸 Social Media Usage (Instagram, etc.):**
+Sharing these images is permitted under the **CC BY-NC-ND 4.0** license, provided you strictly follow:
+1. **Attribution:** Clearly credit **Haroldo Horta / SUR DAO**.
+2. **No Derivatives:** Use of filters, cropping, or text overlays that alter the original composition is prohibited.
+3. **Non-Commercial:** Use by corporate accounts, brands, or for advertising is prohibited without express authorization.
 
-[↑ Back to top](#-sur-dao-el-atlas-de-haroldo-horta)
+**📬 Contact:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
+
+[↑ Back to top](#-english)
 
 ---
 
@@ -72,29 +78,23 @@
 ### 🗺️ SUR DAO: O Atlas de Haroldo Horta
 **Arquivo de Memória Visual, Cartografia Social e Liberdade Criativa**
 
-**Perspectiva Editorial:** **SUR DAO** é um esforço de curadoria que transcende a imagem. Este atlas documenta pontos de inflexão histórica na América Latina, capturando a tensão entre o poder, o trabalho da imprensa internacional e a realidade comunitária.
+**Perspectiva Editorial:** Este atlas documenta pontos de inflexão histórica na América Latina, capturando a tensão entre o poder e a realidade comunitária.
 
-**Coleções Especiais:**
-* **🛡️ Marcos Geopolíticos:** Nicarágua (Revolução), Peru (Abimael Guzmán, Embaixada Japão).
-* **🤝 Etnografia e Resistência:** Conflito Pehuenche e vida em Atacama (Peine).
-* **⚓ Travessia e Soberania:** Faróis do Chile e Navio-Escola Esmeralda.
-* **🦅 Seleção do Autor:** Fotografia aérea em paramotor e liberdade criativa.
+**📜 Respeito ao Valor Histórico:**
+Este arquivo contém registros de conflitos armados, resistências indígenas e processos sociais profundos. Solicita-se aos usuários tratar este material com o respeito que a dignidade das pessoas retratadas e a gravidade dos fatos históricos exigem.
 
-> *"Aos 10 dias, chegou a autoridade. O 'huinca' devia ir embora... o testemunho da barreira entre o forasteiro e a comunidade."*
+**📸 Uso em Redes Sociais (Instagram, etc.):**
+É permitido compartilhar estas imagens sob a licença **CC BY-NC-ND 4.0**, cumprindo rigorosamente:
+1. **Atribuição:** Mencionar claramente **Haroldo Horta / SUR DAO**.
+2. **Não Alterar:** Proibido o uso de filtros, recortes ou textos sobrepostos que alterem a composição original.
+3. **Não Comercial:** Proibido o uso em contas de empresas, marcas ou publicidade sem autorização expressa.
 
-[↑ Voltar ao topo](#-sur-dao-el-atlas-de-haroldo-horta)
+**📬 Contato:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
 
----
-
-## ⚖️ Licencia & Copyright / License / Licença
-Este archivo se publica bajo la licencia **CC BY-NC-ND 4.0**. 
-* **Uso:** Personal y educativo solamente. 
-* **Prohibido:** Uso comercial, filtros o recortes sin autorización.
-* **Redes Sociales:** Se debe citar a Haroldo Horta / SUR DAO.
+[↑ Voltar ao topo](#-português)
 
 ---
 
-## 📬 Contacto / Contact / Contato
-- **Web:** [haroldohorta.github.io/atlas/](https://haroldohorta.github.io/atlas/)
-- **Ubicación Actual:** Junín, Argentina.
-- **Desarrollado en medio de una tormenta en Junín, 2026.**
+> **Desarrollado con sentido en medio de una tormenta en Junín, 2026.**
+
+
