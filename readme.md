@@ -38,10 +38,10 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 ### Una Trayectoria en Tres Actos
 
 #### I. El Corresponsal (1979 - 1998) | *El Barro y la Trinchera*
-Haroldo capturó el grano de la historia en la **Nicaragua Sandinista** (1979-1985), los conflictos armados de **Perú** y la resistencia obrera en **Lota**, Chile. La cámara fue testigo directo de transformaciones donde el realismo social se impone al olvido.
+Haroldo capturó el grano de la historia en la **Nicaragua Sandinista** (1979-1985), los conflictos armados de **Perú** y la resistencia obrera en **Lota**, Chile. La cámara fue testigo directo de transformaciones donde el realismo social se impone al olvido. Especial mención a la toma de rehenes en la embajada de Japon en lima, donde capturo momentos de máxima tensión desde el ultraligero, con este hito se abre una nueva etapa; inedita en esa época, ser capaz de registrar desde el aire sin la necesidad de recurrir al arriendo de un avion o un helicóptero.
 
 #### II. La Luz del Fin del Mundo (1999 - 2022) | *Patrimonio y Perspectiva*
-La técnica al servicio del patrimonio nacional: **Faros de Chile**, **Antártida Chilena**, **Rapa Nui** y la inmensidad de la **Patagonia**. Un registro sistemático de la soberanía y la belleza del territorio.
+La técnica al servicio del patrimonio nacional: **Faros de Chile**, **Antártida Chilena**, **Rapa Nui** y la inmensidad de la **Patagonia**. Un registro sistemático de la soberanía y la belleza del territorio. 
 
 #### III. Memoria Viva y Libertad (2023 - Presente)
 Hoy habita el territorio en su casa-estudio rodante. Como **registrador etnográfico libre**, captura historias desde el aire en **Paramotor** y desde la ruta, compartiendo la mística de quien vive haciendo lo que le apasiona.
