@@ -3,10 +3,10 @@
   
   <br>
   <h1>📷 HAROLDO HORTA 📷</h1>
-  <h3>50 Años de Memoria Visual / 50 Years of Visual Memory</h3>
+  <h3>50 Años de Memoria Viva / 50 Years of Living Memory</h3>
   
   <p>
-    <i>"No solo capturar la imagen, sino rescatar la esencia humana que habita en ella."</i>
+    <i>"Del barro de la revolución en Nicaragua al silencio infinito de Atacama. Un archivo rescatado para no olvidar el vuelo ni la dignidad humana."</i>
   </p>
 
   <p align="center">
@@ -29,57 +29,53 @@
 ---
 
 <a name="-español"></a>
-## 🇪🇸 Español
-### 🗺️ El Ojo Nómada: Archivo Haroldo Horta
+## 🇪🇸 Español: El Manifiesto de una Vida
 
-Este repositorio no es solo una galería; es un acto de **resistencia contra el olvido**. Contiene el trabajo de vida de Haroldo Horta, fotógrafo documental que ha recorrido América Latina capturando los momentos donde la historia y la humanidad colisionan.
+Este repositorio constituye el **Atlas Digital** de Haroldo Horta. No es solo un archivo técnico de 28TB; es un acto de resistencia y una reconexión con el valor de lo humano a través de la lente, desde el cielo y la tierra.
 
-Desde las trincheras de la Revolución en Centroamérica hasta el silencio blanco de la Antártida, este archivo digitaliza y geolocaliza miles de negativos y archivos digitales para devolverlos al patrimonio común.
+### Una Trayectoria en Tres Actos
+
+* **I. El Corresponsal (1979 - 1998) | *El Barro y la Trinchera*:** Documentación de la crudeza y esperanza del continente. Haroldo capturó el grano de la historia en la **Nicaragua Sandinista**, los conflictos de **Perú** y la resistencia social en **Lota**.
+* **II. La Luz del Fin del Mundo (1999 - 2022) | *Patrimonio y Perspectiva*:** Una etapa de consolidación editorial (Libros de Faros, Antártida, Rapa Nui) donde la técnica se puso al servicio del patrimonio nacional y la soberanía del territorio.
+* **III. Memoria Viva y Libertad (Presente):** Tras jubilar, Haroldo decidió transformar su vida en una "casa estudio rodante". Hoy habita el territorio en un Motor Home junto a sus perros, explorando Sudamérica. En esta etapa, actúa como un **registrador etnográfico libre**, capturando historias desde el aire en Paramotor y desde la ruta, compartiendo la mística de quien vive haciendo lo que le apasiona.
 
 <img src="fotos/panos/02_espanol.webp" width="100%" alt="Faro - Guía">
 
-#### 📂 Ejes de la Colección:
-* **🔥 Fuego y Revolución (Centroamérica):** Testimonio directo de la insurrección sandinista en Nicaragua y el conflicto en El Salvador. La vida cotidiana en medio de la guerra.
-* **🏔️ Raíces y Andes (Pueblos Originarios):** Un registro antropológico y visual de las comunidades Pehuenches, Aymaras y la vida en el altiplano.
-* **🌊 Confines (Chile y Antártida):** La soledad de los Faros de Chile y la inmensidad del territorio antártico.
+### 🏛️ Validación Internacional y Respaldo de Prensa
+La mirada de Haroldo ha sido el lente de medios globales, validando una vida dedicada al registro de calidad:
+
+| Bloque Editorial | Medios Destacados | Validación Documental |
+| :--- | :--- | :--- |
+| **Prensa Europea** | *Stern*, *Folket i Bild*, *Zeitenspiegel* | [Evidencia: Reportajes Suecia/Alemania](https://drive.google.com/drive/folders/1RQokGcrZrStpAMnyHUbsdlw8y3tECjOq) |
+| **Prensa Latinoamérica** | *Paula*, *Página/12*, *La Tercera* | [Entrevista: Una vida de alto vuelo](https://www.latercera.com/diario-impreso/una-vida-de-alto-vuelo/) |
+| **Patrimonio** | *Kactus*, *UNESCO*, *Armada de Chile* | [Catálogo: Faros de Chile (Amazon)](https://www.amazon.com/-/es/Lighthouses-Direccion-Territorio-Maritime-Mercante/dp/9567136246) |
 
 [↑ Volver al inicio](#-español)
 
 ---
 
 <a name="-english"></a>
-## 🇺🇸 English
-### 🗺️ The Nomadic Eye: Haroldo Horta's Archive
+## 🇺🇸 English: The Nomadic Eye
 
-This repository is not just a gallery; it is an act of **resistance against oblivion**. It holds the lifework of Haroldo Horta, a documentary photographer who has traversed Latin America capturing moments where history and humanity collide.
-
-From the trenches of the Revolution in Central America to the white silence of Antarctica, this archive digitizes and geolocates thousands of negatives and digital files to return them to our common heritage.
+This archive hosts the digital legacy of **Haroldo Horta**, a documentary photographer and pilot who has spent over 50 years recording the world from unique perspectives. From war trenches in Central America to the high-altitude silence of the Andes.
 
 <img src="fotos/panos/03_english.webp" width="100%" alt="Nicaragua Internationalist">
 
-#### 📂 Collection Pillars:
-* **🔥 Fire & Revolution (Central America):** A first-hand witness to the Sandinista insurrection in Nicaragua and the conflict in El Salvador. Daily life amidst war.
-* **🏔️ Roots & Andes (Indigenous Peoples):** An anthropological and visual record of the Pehuenche and Aymara communities, and life in the high Andean plateau.
-* **🌊 The Edges (Chile & Antarctica):** The solitude of Chilean Lighthouses and the immensity of the Antarctic territory.
+Today, Haroldo lives as an **ethnographic recorder of life itself**. Traveling in his rolling studio (Motor Home) across South America with his dogs, he combines paratrike flying and aerial photography to capture living memory in its freest form.
 
 [↑ Back to top](#-español)
 
 ---
 
 <a name="-português"></a>
-## 🇧🇷 Português
-### 🗺️ O Olho Nômade: Arquivo Haroldo Horta
+## 🇧🇷 Português: Memória Viva
 
-Este repositório não é apenas uma galeria; é um ato de **resistência contra o esquecimento**. Contém a obra de vida de Haroldo Horta, fotógrafo documental que percorreu a América Latina capturando momentos onde a história e a humanidade colidem.
-
-Das trincheiras da Revolução na América Central ao silêncio branco da Antártida, este arquivo digitaliza e geolocaliza milhares de negativos e arquivos digitais para devolvê-los ao patrimônio comum.
+Este repositório abriga o legado de **Haroldo Horta**. Uma jornada documental que vai da resistência na América Central aos confins da Antártida, passando pela vida nômade atual pelos caminhos da América do Sul.
 
 <img src="fotos/panos/04_portugues.webp" width="100%" alt="San Pedro Atacama">
 
-#### 📂 Eixos da Coleção:
-* **🔥 Fogo e Revolução (América Central):** Testemunho direto da insurreição sandinista na Nicarágua e o conflito em El Salvador.
-* **🏔️ Raízes e Andes (Povos Originários):** Um registro antropológico das comunidades Pehuenches, Aymaras e a vida no altiplano.
-* **🌊 Confins (Chile e Antártida):** A solidão dos Faróis do Chile e a imensidão do território antártico.
+* **Missão:** Preservar e geolocalizar 50 anos de fotografia documental e aérea.
+* **Presente:** Vivendo e registrando a estrada em seu "Carromato", Haroldo integra tecnologia (Drones) e humanidade para plasmar formas de vida alternativas.
 
 [↑ Voltar ao topo](#-español)
 
@@ -89,14 +85,10 @@ Das trincheiras da Revolução na América Central ao silêncio branco da Antár
 
 ## ⚖️ Licencia / License / Licença
 
-Este trabajo está protegido para asegurar que la memoria sea libre pero respetada.
-*This work is protected to ensure memory remains free but respected.*
+Este trabajo está licenciado bajo una **Licencia Internacional Creative Commons Atribución-NoComercial-SinDerivadas 4.0**.
+*This work is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**.*
 
-**Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0)**.
-
-> **⛔ No Comercial:** Prohibida la venta de estas imágenes.
-> **⛔ Sin Derivadas:** Las fotos deben mantenerse íntegras, sin ediciones que alteren su verdad histórica.
-> **✅ Atribución:** Siempre citar a **Haroldo Horta** como autor.
+> **Usted es libre de:** Compartir, copiar y redistribuir el material en cualquier medio o formato bajo atribución requerida y sin fines comerciales.
 
 <img src="fotos/panos/06_licencia_post.webp" width="100%" alt="El Viaje Continúa">
 
@@ -104,8 +96,7 @@ Este trabajo está protegido para asegurar que la memoria sea libre pero respeta
 
 ## 🛡️ Rescate Patrimonial / Heritage Rescue
 
-Este archivo representa la **Trayectoria #00** de la iniciativa de rescate de memoria impulsada por **SUR DAO**.
-*This archive represents **Trajectory #00** of the memory rescue initiative powered by **SUR DAO**.*
+Este archivo representa la **Trayectoria #00** de la iniciativa de rescate de memoria impulsada por **SUR DAO**. Registrar la belleza y el dolor es el último acto de libertad.
 
 > **SUR DAO:** Tecnología descentralizada al servicio de la Memoria Histórica.
 > <br>
@@ -119,7 +110,7 @@ Este archivo representa la **Trayectoria #00** de la iniciativa de rescate de me
 
 <br>
 <div align="center">
-  <h3>Desarrollado con sentido y amor en medio de una tormenta en Junín, 2026.</h3>
+  <h3>Desarrollado con sentido y amor en medio de una tormenta en Junín, Argentina, 2026.</h3>
   
   <img src="fotos/panos/07_cierre.webp" width="100%" alt="Fin del Mundo">
 </div>
