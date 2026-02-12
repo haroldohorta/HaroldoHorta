@@ -6,7 +6,7 @@
   <h3>50 Años de Memoria Viva / 50 Years of Living Memory / 50 Anos de Memória Viva</h3>
   
   <p>
-    <i>"Del barro de la revolución en Nicaragua al silencio infinito de Atacama. Un archivo rescatado para no olvidar el vuelo ni la dignidad humana."</i>
+    <i>"Desde el corazon de la revolución Sandinista en Nicaragua al silencio infinito de Atacama. Un archivo rescatado que nos recuerda el no olvidar la dignidad humana, desde el cielo como desde la tierra."</i>
   </p>
 
   <p align="center">
