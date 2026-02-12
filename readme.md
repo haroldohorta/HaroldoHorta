@@ -27,8 +27,6 @@
     <h1>🌍 ACCEDER AL ATLAS / ACCESS THE ATLAS 🌍</h1>
   </a>
   
-  <p><i>Explora medio siglo de memoria visual georreferenciada</i></p>
-  <br>
 </div>
 
 ---
