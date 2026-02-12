@@ -19,11 +19,10 @@
   [![Archive Size](https://img.shields.io/badge/Archivo-28TB-orange.svg)]()
   [![Region](https://img.shields.io/badge/Región-Latinoamérica-blue.svg)]()
 
-  <br>
+<br>
   <a href="https://haroldohorta.github.io/atlas/">
     <h1>🌍 [ ACCEDER AL ATLAS / ACCESS THE ATLAS ] 🌍</h1>
   </a>
-  <p><i>Explora medio siglo de memoria visual georreferenciada</i></p>
   <br>
 </div>
 
