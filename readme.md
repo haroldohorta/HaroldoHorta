@@ -6,8 +6,7 @@
   <h3>50 Años de Memoria Visual / 50 Years of Visual Memory</h3>
   
   <p>
-    <i>"Memoria viva, al rescate de lo humano"</i><br>
-    <i>"Living memory, to the rescue of the human essence"</i>
+    <i>"No solo capturar la imagen, sino rescatar la esencia humana que habita en ella."</i>
   </p>
 
   <p align="center">
@@ -31,15 +30,18 @@
 
 <a name="-español"></a>
 ## 🇪🇸 Español
-### 🗺️ El Archivo de Haroldo Horta
+### 🗺️ El Ojo Nómada: Archivo Haroldo Horta
 
-Este repositorio aloja el legado visual de **Haroldo Horta**. Un recorrido documental que abarca desde la resistencia en Centroamérica hasta los confines de la Antártida, pasando por la vida nómada en los Andes y la historia de los Faros de Chile.
+Este repositorio no es solo una galería; es un acto de **resistencia contra el olvido**. Contiene el trabajo de vida de Haroldo Horta, fotógrafo documental que ha recorrido América Latina capturando los momentos donde la historia y la humanidad colisionan.
+
+Desde las trincheras de la Revolución en Centroamérica hasta el silencio blanco de la Antártida, este archivo digitaliza y geolocaliza miles de negativos y archivos digitales para devolverlos al patrimonio común.
 
 <img src="fotos/panos/02_espanol.webp" width="100%" alt="Faro - Guía">
 
-* **Misión:** Preservar, digitalizar y geolocalizar medio siglo de fotografía analógica y digital.
-* **Tecnología:** Imágenes procesadas en alta fidelidad y servidas a través de un mapa interactivo descentralizado.
-* **Colecciones:** Nicaragua Sandinista, El Salvador, Pueblos Originarios, Antártida, Faros.
+#### 📂 Ejes de la Colección:
+* **🔥 Fuego y Revolución (Centroamérica):** Testimonio directo de la insurrección sandinista en Nicaragua y el conflicto en El Salvador. La vida cotidiana en medio de la guerra.
+* **🏔️ Raíces y Andes (Pueblos Originarios):** Un registro antropológico y visual de las comunidades Pehuenches, Aymaras y la vida en el altiplano.
+* **🌊 Confines (Chile y Antártida):** La soledad de los Faros de Chile y la inmensidad del territorio antártico.
 
 [↑ Volver al inicio](#-español)
 
@@ -47,15 +49,18 @@ Este repositorio aloja el legado visual de **Haroldo Horta**. Un recorrido docum
 
 <a name="-english"></a>
 ## 🇺🇸 English
-### 🗺️ Haroldo Horta's Archive
+### 🗺️ The Nomadic Eye: Haroldo Horta's Archive
 
-This repository hosts the visual legacy of **Haroldo Horta**. A documentary journey spanning from the resistance in Central America to the edges of Antarctica, capturing the nomadic life in the Andes and the history of Chilean Lighthouses.
+This repository is not just a gallery; it is an act of **resistance against oblivion**. It holds the lifework of Haroldo Horta, a documentary photographer who has traversed Latin America capturing moments where history and humanity collide.
+
+From the trenches of the Revolution in Central America to the white silence of Antarctica, this archive digitizes and geolocates thousands of negatives and digital files to return them to our common heritage.
 
 <img src="fotos/panos/03_english.webp" width="100%" alt="Nicaragua Internationalist">
 
-* **Mission:** To preserve, digitize, and geolocate half a century of analog and digital photography.
-* **Technology:** High-fidelity imagery served through a decentralized interactive map.
-* **Collections:** Sandinista Nicaragua, El Salvador, Indigenous Peoples, Antarctica, Lighthouses.
+#### 📂 Collection Pillars:
+* **🔥 Fire & Revolution (Central America):** A first-hand witness to the Sandinista insurrection in Nicaragua and the conflict in El Salvador. Daily life amidst war.
+* **🏔️ Roots & Andes (Indigenous Peoples):** An anthropological and visual record of the Pehuenche and Aymara communities, and life in the high Andean plateau.
+* **🌊 The Edges (Chile & Antarctica):** The solitude of Chilean Lighthouses and the immensity of the Antarctic territory.
 
 [↑ Back to top](#-español)
 
@@ -63,14 +68,18 @@ This repository hosts the visual legacy of **Haroldo Horta**. A documentary jour
 
 <a name="-português"></a>
 ## 🇧🇷 Português
-### 🗺️ O Arquivo de Haroldo Horta
+### 🗺️ O Olho Nômade: Arquivo Haroldo Horta
 
-Este repositório abriga o legado visual de **Haroldo Horta**. Uma jornada documental que vai da resistência na América Central aos confins da Antártida, passando pela vida nômade nos Andes e a história dos Faróis do Chile.
+Este repositório não é apenas uma galeria; é um ato de **resistência contra o esquecimento**. Contém a obra de vida de Haroldo Horta, fotógrafo documental que percorreu a América Latina capturando momentos onde a história e a humanidade colidem.
+
+Das trincheiras da Revolução na América Central ao silêncio branco da Antártida, este arquivo digitaliza e geolocaliza milhares de negativos e arquivos digitais para devolvê-los ao patrimônio comum.
 
 <img src="fotos/panos/04_portugues.webp" width="100%" alt="San Pedro Atacama">
 
-* **Missão:** Preservar, digitalizar e geolocalizar meio século de fotografia documental.
-* **Tecnologia:** Imagens processadas em alta fidelidade e servidas através de um mapa interativo descentralizado.
+#### 📂 Eixos da Coleção:
+* **🔥 Fogo e Revolução (América Central):** Testemunho direto da insurreição sandinista na Nicarágua e o conflito em El Salvador.
+* **🏔️ Raízes e Andes (Povos Originários):** Um registro antropológico das comunidades Pehuenches, Aymaras e a vida no altiplano.
+* **🌊 Confins (Chile e Antártida):** A solidão dos Faróis do Chile e a imensidão do território antártico.
 
 [↑ Voltar ao topo](#-español)
 
@@ -80,11 +89,14 @@ Este repositório abriga o legado visual de **Haroldo Horta**. Uma jornada docum
 
 ## ⚖️ Licencia / License / Licença
 
-Este trabajo está licenciado bajo una **Licencia Internacional Creative Commons Atribución-NoComercial-SinDerivadas 4.0**.
-This work is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**.
+Este trabajo está protegido para asegurar que la memoria sea libre pero respetada.
+*This work is protected to ensure memory remains free but respected.*
 
-> **Usted es libre de:** Compartir, copiar y redistribuir el material en cualquier medio o formato.
-> **Bajo las siguientes condiciones:** Atribución requerida, No Comercial, No Derivadas.
+**Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0)**.
+
+> **⛔ No Comercial:** Prohibida la venta de estas imágenes.
+> **⛔ Sin Derivadas:** Las fotos deben mantenerse íntegras, sin ediciones que alteren su verdad histórica.
+> **✅ Atribución:** Siempre citar a **Haroldo Horta** como autor.
 
 <img src="fotos/panos/06_licencia_post.webp" width="100%" alt="El Viaje Continúa">
 
@@ -107,7 +119,7 @@ Este archivo representa la **Trayectoria #00** de la iniciativa de rescate de me
 
 <br>
 <div align="center">
-  <h3>Desarrollado en Laguna de Gomez, Junín, Provincia de Buenos Aires, AR, afuera rayos, viento y agua, adentro una sonrisa .</h3>
+  <h3>Desarrollado con sentido y amor en medio de una tormenta en Junín, 2026.</h3>
   
   <img src="fotos/panos/07_cierre.webp" width="100%" alt="Fin del Mundo">
 </div>
