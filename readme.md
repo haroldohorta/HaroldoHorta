@@ -39,8 +39,12 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 
 #### I. El Corresponsal (1979 - 1998) | *El Barro y la Trinchera*
 Haroldo capturó el grano de la historia donde la cámara fue testigo de transformaciones geopolíticas críticas:
-- **Nicaragua Sandinista (1979-1985):** Más que un testigo, fue protagonista del "duelo en el acantilado" contra la Guardia Nacional. Su captura fue reportada por la inteligencia chilena de la época, que lo describía con "desagrado" en informes consulares, viéndolo como una evidencia viva de la injerencia extranjera.
+
+- **Nicaragua Sandinista (1979-1985):** Más que un testigo, fue protagonista del "duelo en el acantilado" contra la Guardia Nacional. Su captura fue reportada por la inteligencia chilena de la época, que lo describía con "desagrado" en informes consulares, viéndolo como una evidencia viva de la injerencia extranjera en la región.
+
 - **Perú y la Crisis de los Rehenes:** Cobertura exclusiva de la toma de la Embajada de Japón en Lima. Utilizando su ultraligero, retrató momentos de máxima tensión desde el aire, marcando un hito técnico: la capacidad de documentar con precisión aérea sin depender de naves oficiales.
+
+- **Lota, Chile:** Registro de la resistencia obrera y la dignidad en la lucha social minera.
 
 #### II. La Luz del Fin del Mundo (1999 - 2022) | *Patrimonio y Perspectiva*
 Etapa de consolidación editorial al servicio de la soberanía territorial: **Faros de Chile**, **Antártida**, **Rapa Nui** y **Patagonia**. Un registro sistemático de los confines donde la técnica se vuelve patrimonio.
@@ -71,6 +75,47 @@ Tras jubilar, Haroldo habita el territorio en su casa-estudio rodante. Como **re
 
 ---
 
+### 📚 Validación Académica e Histórica
+
+La trayectoria de Haroldo Horta como combatiente internacionalista y fotógrafo de guerra ha sido objeto de análisis en investigaciones académicas sobre la Guerra Fría latinoamericana. El historiador **Fernando Camacho Padilla** (Universidad Autónoma de Madrid) documenta su participación en la Revolución Sandinista:
+
+> *"Haroldo Horta Tricallotis, elemento integrante del Frente Sandinista de Liberación Nacional, quien fuera capturado recientemente en un enfrentamiento que los guerrilleros sostuvieran con la Guardia Nacional de Nicaragua."*
+
+**Contexto de su captura (1979):**
+- Según documentos diplomáticos chilenos desclasificados, Haroldo no fue ejecutado debido a su origen chileno
+- El régimen de Somoza utilizó su detención como evidencia de "injerencia extranjera" ante organismos internacionales
+- Fue liberado tras la caída de Somoza el 19 de julio de 1979
+
+**Rol post-revolucionario:**
+El estudio confirma que numerosos chilenos exiliados, incluyendo excombatientes como Haroldo, ocuparon cargos de importancia en el gobierno sandinista, contribuyendo a la reconstrucción nacional en áreas estratégicas.
+
+**Referencia académica:**
+- Camacho Padilla, F. (2020). "Las relaciones interamericanas durante la última década de la guerra fría. La reacción del régimen de Pinochet a la revolución sandinista (1978-1985)". *Secuencia* (108), e1841. [DOI: 10.18234/secuencia.v0i108.1841](https://doi.org/10.18234/secuencia.v0i108.1841)
+
+---
+
+<a name="-english"></a>
+## 🇺🇸 English: The Nomadic Eye
+
+This repository hosts the **Digital Atlas** of Haroldo Horta: 28TB of photographic memory documenting five decades of Latin American history. From war trenches in Central America to the high-altitude silence of the Andes, Haroldo now embraces his role as a **Nomadic Ethnographic Recorder**.
+
+<img src="fotos/panos/03_english.webp" width="100%" alt="Nicaragua Internationalist">
+
+[↑ Back to top](#-english)
+
+---
+
+<a name="-português"></a>
+## 🇧🇷 Português: Memória Viva
+
+Este repositório abriga o **Atlas Digital** de Haroldo Horta. Das trincheiras da Nicarágua à liberdade do voo em paramotor, Haroldo registra a essência humana percorrendo a América do Sul.
+
+<img src="fotos/panos/04_portugues.webp" width="100%" alt="San Pedro Atacama">
+
+[↑ Voltar ao topo](#-português)
+
+---
+
 <a name="-apoyo"></a>
 ## 💝 Apoya este Proyecto / Support this Project
 
@@ -86,8 +131,14 @@ Este archivo vive gracias al esfuerzo independiente de preservar 50 años de mem
 
 ## 🛡️ Rescate Patrimonial: SUR DAO
 
-Este archivo representa la **Trayectoria #00** de la iniciativa de rescate impulsada por **SUR DAO**.  
+Este archivo representa la **Trayectoria #00** de la iniciativa de rescate de memoria impulsada por **SUR DAO**.  
 [**🔗 Visitar Repositorio Oficial SUR DAO (Nave Madre)**](https://github.com/TIANHH77/Sur-DAO)
+
+---
+
+## 👤 Sobre el Fotógrafo / About the Photographer
+
+**Haroldo Horta** (Chile, 1954) es fotógrafo documental, piloto de paramotor y archivista de memoria histórica. Su trabajo abarca desde el fotoperiodismo de guerra en Centroamérica hasta la documentación patrimonial de territorios australes. Actualmente vive de forma nómade recorriendo Sudamérica en su motor home, combinando fotografía aérea y registro etnográfico.
 
 ---
 
@@ -95,7 +146,10 @@ Este archivo representa la **Trayectoria #00** de la iniciativa de rescate impul
 - **Email:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)
 - **Web:** [haroldohorta.github.io/atlas](https://haroldohorta.github.io/atlas/)
 
+---
+
 <div align="center">
   <h3>Desarrollado con sentido y amor en medio de una tormenta en Junín, Argentina, 2026.</h3>
   <img src="fotos/panos/07_cierre.webp" width="100%" alt="Fin del Mundo">
 </div>
+
