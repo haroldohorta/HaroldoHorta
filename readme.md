@@ -22,11 +22,17 @@
   </p>
 
   <br>
-  
-  <a href="https://haroldohorta.github.io/atlas/">
-    <h1>🌍 ACCEDER AL ATLAS / ACCESS THE ATLAS 🌍</h1>
-  </a>
-  
+
+  <table>
+    <tr>
+      <td bgcolor="#f0f0f0" align="center">
+        <a href="https://haroldohorta.github.io/atlas/">
+          <h2>&nbsp;&nbsp;&nbsp; 🌍 ACCEDER AL ATLAS / ACCESS THE ATLAS 🌍 &nbsp;&nbsp;&nbsp;</h2>
+        </a>
+      </td>
+    </tr>
+  </table>
+
 </div>
 
 ---
