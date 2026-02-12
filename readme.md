@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/01_portada.webp" width="100%" alt="SUR DAO - Memoria Viva">
+  <img src="fotos/panos/01_portada.webp" width="100%" alt="SUR DAO - Memoria Viva">
   
   <br>
   📷 **"Memoria viva, al rescate de lo humano"** 📷
@@ -22,6 +22,7 @@
   <a href="https://haroldohorta.github.io/atlas/">
     <h1>🌍 [ ACCEDER AL ATLAS / ACCESS THE ATLAS ] 🌍</h1>
   </a>
+  <br>
 </div>
 
 ---
@@ -32,7 +33,7 @@
 
 Este repositorio aloja el **Atlas de Memoria Visual** de Haroldo Horta. Un recorrido documental que abarca desde la resistencia en Centroamérica hasta los confines de la Antártida, pasando por la vida nómada en los Andes.
 
-<img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/02_espanol.webp" width="100%" alt="Faro - Guía">
+<img src="fotos/panos/02_espanol.webp" width="100%" alt="Faro - Guía">
 
 * **Misión:** Preservar, digitalizar y geolocalizar 50 años de fotografía documental.
 * **Tecnología:** Imágenes procesadas en alta fidelidad (WebP + Metadatos) y servidas a través de un mapa interactivo descentralizado.
@@ -48,7 +49,7 @@ Este repositorio aloja el **Atlas de Memoria Visual** de Haroldo Horta. Un recor
 
 This repository hosts the **Visual Memory Atlas** by Haroldo Horta. A documentary journey spanning from the resistance in Central America to the edges of Antarctica, capturing the nomadic life in the Andes.
 
-<img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/03_english.webp" width="100%" alt="Nicaragua Internationalist">
+<img src="fotos/panos/03_english.webp" width="100%" alt="Nicaragua Internationalist">
 
 * **Mission:** To preserve, digitize, and geolocate 50 years of documentary photography.
 * **Technology:** High-fidelity imagery (WebP + Metadata) served through a decentralized interactive map.
@@ -64,7 +65,7 @@ This repository hosts the **Visual Memory Atlas** by Haroldo Horta. A documentar
 
 Este repositório abriga o **Atlas de Memória Visual** de Haroldo Horta. Uma jornada documental que vai da resistência na América Central aos confins da Antártida, passando pela vida nômade nos Andes.
 
-<img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/04_portugues.webp" width="100%" alt="San Pedro Atacama">
+<img src="fotos/panos/04_portugues.webp" width="100%" alt="San Pedro Atacama">
 
 * **Missão:** Preservar, digitalizar e geolocalizar 50 anos de fotografia documental.
 * **Tecnologia:** Imagens processadas em alta fidelidade (WebP + Metadados) e servidas através de um mapa interativo descentralizado.
@@ -73,7 +74,7 @@ Este repositório abriga o **Atlas de Memória Visual** de Haroldo Horta. Uma jo
 
 ---
 
-<img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/05_licencia_pre.webp" width="100%" alt="Industria y Recurso">
+<img src="fotos/panos/05_licencia_pre.webp" width="100%" alt="Industria y Recurso">
 
 ## ⚖️ Licencia / License / Licença
 
@@ -83,7 +84,7 @@ This work is licensed under a **Creative Commons Attribution-NonCommercial-NoDer
 > **Usted es libre de:** Compartir, copiar y redistribuir el material en cualquier medio o formato.
 > **Bajo las siguientes condiciones:** Atribución requerida, No Comercial, No Derivadas.
 
-<img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/06_licencia_post.webp" width="100%" alt="El Viaje Continúa">
+<img src="fotos/panos/06_licencia_post.webp" width="100%" alt="El Viaje Continúa">
 
 ---
 
@@ -95,7 +96,6 @@ This work is licensed under a **Creative Commons Attribution-NonCommercial-NoDer
 <div align="center">
   <h3>Desarrollado con sentido y amor en medio de una tormenta en Junín, 2026.</h3>
   
-  <img src="https://raw.githubusercontent.com/haroldohorta/atlas/main/fotos/panos/07_cierre.webp" width="100%" alt="Fin del Mundo">
+  <img src="fotos/panos/07_cierre.webp" width="100%" alt="Fin del Mundo">
 </div>
-
 
