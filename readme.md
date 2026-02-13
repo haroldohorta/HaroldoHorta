@@ -52,6 +52,21 @@ Tras su jubilación, Haroldo habita el territorio en un Motor Home. Actúa como 
 ---
 
 ### 🏛️ Validación Académica e Internacional
+### 🌍 Matriz de Colaboraciones Internacionales (Series `pub_*`)
+
+Este cuadro vincula las carpetas de archivo del repositorio con los medios y agencias que publicaron o encargaron originalmente el material.
+
+| Región / País | Medio / Agencia | Prefijo en Repo | Temática Principal |
+| :--- | :--- | :--- | :--- |
+| **Alemania** | **Revista Stern / Zeitenspiegel** | `pub_europa` | Conflictos en Centroamérica y Sudamérica. |
+| **Chile** | **Diario La Tercera** | `pub_chile` | Patrimonio, Medioambiente y Vuelo. |
+| **Argentina** | **Diario Página/12** | `pub_pehuenches` | Crónica de viajes y Etnografía. |
+| **Austria** | **Revista Profil** | `pub_europa` | Inicios de la Revolución Sandinista. |
+| **Colombia** | **Prensa Internacional** | `pub_medellin` | Crónica urbana y Narcotráfico (90s). |
+| **Perú** | **Agencias Europeas** | `pub_peru` | Conflicto armado y Túpac Amaru. |
+| **Centroamérica**| **Corresponsalía de Guerra** | `pub_guatemala` | Resistencia y movimientos sociales. |
+
+---
 
 #### 📰 Haroldo en la Prensa
 * [**Una vida de alto vuelo** (La Tercera)](https://www.latercera.com/diario-impreso/una-vida-de-alto-vuelo): Biografía desde las trincheras al vuelo libre.
