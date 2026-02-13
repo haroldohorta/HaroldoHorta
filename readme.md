@@ -29,8 +29,11 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 🗂️ Estructura de Carpetas y Categorías Principales del disco maestro de 28TB
 
 <i>pub_* → Crónica / Etnografía (Editorial, libros, entrevistas, reportajes)<i>
+
 <i>nomad_* → Bitácora Nómada (Visión libre de Haroldo)<i>
+
 <i>fly_* → Vuelo Aéreo (Visión desde el paramotor)<i>
+
 <i>narra_* → Narrativa Sonora (Historias contadas en voz de Haroldo)<i>
 
 
