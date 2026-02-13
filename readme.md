@@ -241,6 +241,31 @@ Cada fotografia do atlas está vinculada a coordenadas geográficas precisas qua
 
 ---
 
+
+---
+
+## 👤 Sobre el Fotógrafo / About the Photographer / Sobre o Fotógrafo
+
+**Haroldo Horta** (Chile, 1954) es fotógrafo documental, piloto de paramotor y archivista de memoria histórica. Su trabajo abarca desde el fotoperiodismo de guerra en Centroamérica hasta la documentación patrimonial de territorios australes. Actualmente vive de forma nómade recorriendo Sudamérica en su motor home, combinando fotografía aérea y registro etnográfico.
+
+**Haroldo Horta** (Chile, 1954) is a documentary photographer, paramotor pilot, and historical memory archivist. His work spans from war photojournalism in Central America to heritage documentation of southern territories. He currently lives nomadically traveling through South America in his motor home, combining aerial photography and ethnographic documentation.
+
+**Haroldo Horta** (Chile, 1954) é fotógrafo documental, piloto de paramotor e arquivista de memória histórica. Seu trabalho abrange desde o fotojornalismo de guerra na América Central até a documentação patrimonial de territórios austrais. Atualmente vive de forma nômade percorrendo a América do Sul em seu motor home, combinando fotografia aérea e registro etnográfico.
+
+---
+
+## 📬 Contacto / Contact / Contato
+
+- **Email:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)  
+- **Web:** [haroldohorta.github.io/atlas](https://haroldohorta.github.io/atlas/)  
+- **GitHub:** [@haroldohorta](https://github.com/haroldohorta)
+
+---
+
+
+
+
+
 ## 🛡️ Rescate Patrimonial / Heritage Rescue / Resgate Patrimonial
 
 <div align="center">
@@ -266,26 +291,6 @@ Registrar a beleza e a dor é o último ato de liberdade.
 [**🔗 Visitar Repositorio Oficial SUR DAO (Nave Madre)**](https://github.com/TIANHH77/Sur-DAO)
 
 </div>
-
----
-
-## 👤 Sobre el Fotógrafo / About the Photographer / Sobre o Fotógrafo
-
-**Haroldo Horta** (Chile, 1954) es fotógrafo documental, piloto de paramotor y archivista de memoria histórica. Su trabajo abarca desde el fotoperiodismo de guerra en Centroamérica hasta la documentación patrimonial de territorios australes. Actualmente vive de forma nómade recorriendo Sudamérica en su motor home, combinando fotografía aérea y registro etnográfico.
-
-**Haroldo Horta** (Chile, 1954) is a documentary photographer, paramotor pilot, and historical memory archivist. His work spans from war photojournalism in Central America to heritage documentation of southern territories. He currently lives nomadically traveling through South America in his motor home, combining aerial photography and ethnographic documentation.
-
-**Haroldo Horta** (Chile, 1954) é fotógrafo documental, piloto de paramotor e arquivista de memória histórica. Seu trabalho abrange desde o fotojornalismo de guerra na América Central até a documentação patrimonial de territórios austrais. Atualmente vive de forma nômade percorrendo a América do Sul em seu motor home, combinando fotografia aérea e registro etnográfico.
-
----
-
-## 📬 Contacto / Contact / Contato
-
-- **Email:** [haroldohorta@gmail.com](mailto:haroldohorta@gmail.com)  
-- **Web:** [haroldohorta.github.io/atlas](https://haroldohorta.github.io/atlas/)  
-- **GitHub:** [@haroldohorta](https://github.com/haroldohorta)
-
----
 
 <a name="-apoyo"></a>
 ## 💝 Apoya este Proyecto / Support this Project
