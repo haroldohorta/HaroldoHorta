@@ -26,11 +26,11 @@
 
 Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memoria fotográfica que documentan cinco décadas de historia latinoamericana. No es solo un archivo técnico; es un acto de resistencia y una reconexión con el valor de lo humano a través de la lente, desde el cielo y la tierra.
 
-🗂️ Estructura de Carpetas y Categorías Principales
+🗂️ Estructura de Carpetas y Categorías Principales del disco maestro de 28TB
 
-├── pub_* → Crónica / Etnografía (Editorial, libros, entrevistas, reportajes)
-├── nomad_* → Bitácora Nómada (Visión libre de Haroldo)
-├── fly_* → Vuelo Aéreo (Visión desde el paramotor)
-└── narra_* → Narrativa Sonora (Historias contadas en voz de Haroldo)
+pub_* → Crónica / Etnografía (Editorial, libros, entrevistas, reportajes)
+nomad_* → Bitácora Nómada (Visión libre de Haroldo)
+fly_* → Vuelo Aéreo (Visión desde el paramotor)
+narra_* → Narrativa Sonora (Historias contadas en voz de Haroldo)
 
 
