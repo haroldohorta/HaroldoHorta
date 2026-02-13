@@ -1688,9 +1688,8 @@
         "lon": -75.5812,
         "thumb": "fotos/pub_medellin/ojo_ojo.webp",
         "descripcion": "Crónica urbana y transformación en Medellín."
-
-        [
-  {
+    },      
+    {
     "id": "agua Uyuni Pano",
     "lat": -20.331823333333332,
     "lon": -66.98807666666667,
@@ -2186,5 +2185,4 @@
     "rating": 3
   }
 ]
-    }
-]
+    
