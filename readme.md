@@ -1,5 +1,5 @@
 
- <div align="center">
+ 
 # 🗺️ ATLAS: 50 Años de Memoria Viva
 ### El Archivo Fotográfico de Haroldo Horta
   <div align="center">
@@ -7,6 +7,10 @@
   <p>
     <i>"Desde el corazón de la revolución Sandinista en Nicaragua al silencio infinito de Atacama. Un legado vivo que nos recuerda el no olvidar la dignidad humana, tanto desde el cielo como desde la tierra."</i>
   </p>
+
+ES: Un atlas visual y cartográfico que recorre cinco décadas de historia, desde la guerra en Nicaragua hasta la Antártida y el vuelo libre.
+EN: A cartographic visual archive spanning five decades, from the Nicaraguan revolution to Antarctica and aerial photography.
+PT: Um atlas visual e cartográfico que percorre cinco décadas de história, da guerra na Nicarágua à Antártida e ao voo livre.
 
   <p align="center">
     <a href="#-español">🇪🇸 Español</a> | 
