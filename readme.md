@@ -42,7 +42,7 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 
 ### Una Trayectoria en Tres Actos
 
-#### I. El Corresponsal (1979 - 1998) | *El Barro y la Trinchera*
+#### I. El Corresponsal capturado en acción, reportero gráfico  (1979 - 1998) | *El Barro y la Trinchera*
 Documentación de la crudeza y esperanza del continente. Haroldo capturó el grano de la historia en la **Nicaragua Sandinista** (1979-1985), los conflictos armados de **Perú** y la resistencia obrera en **Lota**, Chile. Fotografía de guerra, fotoperiodismo social y registro de movimientos populares definen esta etapa donde la cámara fue testigo de transformaciones históricas.
 
 #### II. La Luz del Fin del Mundo (1999 - 2022) | *Patrimonio y Perspectiva*
