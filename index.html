@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlas Haroldo Horta | 50 Años de Memoria Viva</title>
     
-    <!-- Open Graph para Facebook/WhatsApp -->
     <meta property="og:title" content="Atlas Haroldo Horta | 50 Años de Memoria Viva">
     <meta property="og:description" content="28TB de memoria fotográfica: desde Nicaragua Sandinista hasta la Patagonia">
     <meta property="og:image" content="https://haroldohorta.github.io/atlas/fotos/panos/01_portada.webp">
     <meta property="og:url" content="https://haroldohorta.github.io/atlas/">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Atlas Haroldo Horta">
     <meta name="twitter:description" content="50 años de fotografía documental latinoamericana">
     <meta name="twitter:image" content="https://haroldohorta.github.io/atlas/fotos/panos/01_portada.webp">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -54,7 +51,7 @@
             font-weight: bold;
         }
         
-        /* Leyenda */
+        /* Leyenda Actualizada */
         .legend { 
             position: absolute; bottom: 30px; left: 30px; 
             background: rgba(0,0,0,0.8); border: 1px solid #444; 
@@ -86,7 +83,6 @@
 </head>
 <body>
 
-<!-- Loading Screen -->
 <div id="loading">
     <div class="spinner">📷</div>
     <div class="text">Cargando Atlas...</div>
@@ -95,9 +91,10 @@
 <div id="map"></div>
 
 <div class="legend">
+    <div><span class="dot" style="background:#b366ff;"></span> NARRATIVA</div>
     <div><span class="dot" style="background:#ff4d4d;"></span> CRÓNICA</div>
     <div><span class="dot" style="background:#4d94ff;"></span> AÉREO</div>
-    <div><span class="dot" style="background:#ffdb4d;"></span> NÓMADA</div>
+    <div><span class="dot" style="background:#ffdb4d;"></span> PATRIMONIO</div>
     <div style="margin-top:5px; color:#777;">* Haz clic en los números para desplegar</div>
 </div>
 
@@ -120,12 +117,17 @@
         animate: true
     });
 
+    // --- LÓGICA DE COLORES ACTUALIZADA ---
     const getStyle = (capa) => {
         if(!capa) return "#fff";
-        if(capa.includes('Crónica')) return "#ff4d4d";
-        if(capa.includes('Aéreo') || capa.includes('fly')) return "#4d94ff";
-        if(capa.includes('Nómada')) return "#ffdb4d";
-        return "#ffffff";
+        // Prioridad a la Narrativa (Historias destacadas)
+        if(capa.includes('Narrativa') || capa.includes('Relato')) return "#b366ff"; // Violeta Místico
+        
+        if(capa.includes('Crónica')) return "#ff4d4d";   // Rojo Sangre
+        if(capa.includes('Aéreo') || capa.includes('fly')) return "#4d94ff"; // Azul Cielo
+        if(capa.includes('Patrimonio') || capa.includes('Nómada')) return "#ffdb4d"; // Amarillo Oro
+        
+        return "#ffffff"; // Blanco por defecto
     };
 
     // 3. Cargar datos
@@ -187,4 +189,3 @@
 
 </body>
 </html>
-
