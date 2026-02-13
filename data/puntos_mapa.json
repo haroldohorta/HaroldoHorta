@@ -2183,6 +2183,19 @@
     "thumb": "fotos/_HHT1810.jpg",
     "full": "fotos/_HHT1810.jpg",
     "rating": 3
+  },
+  {
+    "id": "reagan_nuclear",
+    "lat": -53.1638,
+    "lon": -70.9171,
+    "zona": "Estrecho de Magallanes",
+    "capa": "Narrativa",
+    "titulo": "El Portaaviones Inalcanzable",
+    "thumb": "fotos/reagan_nuclear.jpg",
+    "full": "fotos/reagan_nuclear.jpg",
+    "rating": 5,
+    "descripcion": "Cobertura desde helicóptero Puma del paso del superportaaviones nuclear USS Ronald Reagan (CVN-76) de la Marina de EE. UU. (2004)",
+    "relato": "Teníamos un plan perfecto para fotografiar al portaaviones y sus escoltas chilenas. El problema fue que el gigante iba en 'modo nuclear' a toda velocidad y las lanchas de la Armada no lograban alcanzarlo. Desde el helicóptero tuvimos que pedir por radio que bajaran la velocidad para la foto... obviamente, sin respuesta. ¡Nos dejaron en el polvo de agua!"
   }
 ]
     
