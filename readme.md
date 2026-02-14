@@ -61,7 +61,7 @@ Hoy, el archivo se digitaliza para la posteridad. La mirada de Haroldo ha evoluc
 ## 🇺🇸 ENGLISH: The Architecture of Memory
 
 <div align="center">
-  <img src="fotos/recortes/assets_web/horta-preservacion-digital-proyecto-surdao.webp" width="55%" alt="Digital Preservation Surdao">
+  <img src="fotos/recortes/assets_web/horta-preservacion-digital-proyecto-surdao.webp" width="100%" alt="Digital Preservation Surdao">
 </div>
 
 This digital repository hosts the professional legacy of **Haroldo Horta**, an international photojournalist whose career spans half a century. From the mud of the Sandinista Revolution to the pristine silence of Antarctica, this archive preserves the visual history of a continent.
@@ -76,7 +76,7 @@ This digital repository hosts the professional legacy of **Haroldo Horta**, an i
 ## 🇧🇷 PORTUGUÊS: Resumo do Arquivo
 
 <div align="center">
-  <img src="fotos/recortes/assets_web/horta-propiedad-uyuni-panoramica.webp" width="75%" alt="Salar de Uyuni Panorâmica">
+  <img src="fotos/recortes/assets_web/horta-propiedad-uyuni-panoramica.webp" width="100%" alt="Salar de Uyuni Panorâmica">
 </div>
 
 Este repositório contém o legado digital de **Haroldo Horta**. Como correspondente internacional e fotógrafo editorial, Horta registrou momentos cruciais da história e geografia latino-americana. Sua obra documenta desde a Revolução na Nicarágua até os confins da Antártica Chilena, unindo jornalismo e arte visual.
