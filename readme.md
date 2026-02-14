@@ -21,7 +21,9 @@
 
 ---
 
-## 🇪🇸 Español: El Manifiesto de una Vida
+<img src="assets_web/02_espanol.webp" width="200px" alt="Español">
+
+## El Manifiesto de una Vida
 
 Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memoria fotográfica que documentan cinco décadas de historia. Un acto de rescate patrimonial gestionado por el **Proyecto Surdao**.
 
@@ -59,7 +61,20 @@ Hoy, Haroldo asume el compromiso ético de digitalizar su vida. El aterrizaje fi
 
 ---
 
+<img src="assets_web/03_english.webp" width="180px" alt="English">
+
+This repository hosts the digital legacy of international photojournalist **Haroldo Horta**. From the frontlines of the Sandinista Revolution to the remote Antarctic bases of the Chilean Navy, this archive documents 50 years of global history.
+
+---
+
+<img src="assets_web/04_portugues.webp" width="180px" alt="Português">
+
+Este repositório contém o legado digital de **Haroldo Horta**. Horta registrou momentos cruciais da história e geografia latino-americana, trabalhando para a *Editorial Kactus* e a *Marinha do Chile*.
+
+---
+
 ## 🎓 Respaldo Académico e Investigación
+La obra de Haroldo Horta ha sido objeto de estudio por su valor en la reconstrucción de la memoria histórica.
 * **Investigación:** *"Fotógrafos suecos y la Revolución Sandinista"* por **Fernando Camacho Padilla** (UAM).
 * **Artículo:** [Leer investigación académica completa aquí](https://rephip.unr.edu.ar/bitstream/handle/2133/21434/Camacho%20Padilla_Aletheia.pdf)
 
@@ -70,7 +85,7 @@ Hoy, Haroldo asume el compromiso ético de digitalizar su vida. El aterrizaje fi
 
 ## 🛡️ Blindaje y Cierre del Legado
 
-Como parte del **Proyecto Surdao**, cada pieza de este archivo ha pasado por un proceso de validación legal y técnica para asegurar su permanencia.
+Como parte del **Proyecto Surdao**, cada pieza de este archivo ha pasado por un proceso de validación legal y técnica para asegurar su permanencia y autoría.
 
 <div align="center">
   <img src="assets_web/horta-certificacion-propiedad-intelectual.webp" width="45%" alt="Certificación Derechos">
@@ -79,10 +94,10 @@ Como parte del **Proyecto Surdao**, cada pieza de este archivo ha pasado por un 
 </div>
 
 <img src="assets_web/horta-agencia-zeitenspiegel-alemania-equipo.webp" width="100%" alt="Equipo Zeitenspiegel Alemania">
-<p align="center"><i>Haroldo Horta junto al equipo de la agencia Zeitenspiegel en Alemania.</i></p>
+<p align="center"><i>Haroldo Horta junto al equipo central de la agencia Zeitenspiegel en Alemania.</i></p>
 
 **© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.**
 
 <div align="center">
-  <p><b>Contacto:</b> <a href="mailto:haroldohorta@gmail.com">haroldohorta@gmail.com</a></p>
+  <p><b>Contacto para instituciones y prensa:</b> <a href="mailto:haroldohorta@gmail.com">haroldohorta@gmail.com</a></p>
 </div>
