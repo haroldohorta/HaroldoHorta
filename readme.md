@@ -9,9 +9,9 @@
   </p>
 
   <p align="center">
-    <a href="#-español">🇪🇸 Español</a> | 
-    <a href="#-english">🇺🇸 English</a> | 
-    <a href="#-português">🇧🇷 Português</a> |
+    <a href="#-español-el-manifiesto-de-una-vida">🇪🇸 Español</a> | 
+    <a href="#-english-the-archive-summary">🇺🇸 English</a> | 
+    <a href="#-português-resumo-do-arquivo">🇧🇷 Português</a> |
     <a href="#-apoya-este-proyecto">💝 Apoyar / Support</a>
   </p>
 
@@ -22,7 +22,7 @@
 
 ## 🇪🇸 Español: El Manifiesto de una Vida
 
-Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memoria fotográfica que documentan cinco décadas de historia. No es solo un archivo técnico; es un acto de resistencia y supervivencia. Es la bitácora de un hombre que se fue de casa a los 14 años rumbo a Perú y nunca dejó de moverse, validado hoy por la prensa global y la academia.
+Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memoria fotográfica que documentan cinco décadas de historia. No es solo un archivo técnico; es un acto de resistencia y supervivencia. Es la bitácora de un hombre de ética inquebrantable que salió a recorrer el mundo armado con su cámara, validado hoy por la élite de la prensa global y la academia.
 
 ### 🗂️ Estructura del Archivo (Disco Maestro)
 * **`pub_*`** → **Crónica y Editorial:** Prensa internacional, libros de turismo y patrimonio.
@@ -35,43 +35,41 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 ### 📜 Una Trayectoria en Tres Actos
 
 #### I. El Corresponsal (1979 - 1997) | *El Barro, la Trinchera y el Asedio*
-Documentación de la crudeza del continente. Haroldo capturó la **Nicaragua Sandinista** como combatiente y corresponsal, sobreviviendo a la prisión (1979). Trabajó para las grandes agencias europeas cubriendo conflictos en Centroamérica y Sudamérica.
+Documentó la crudeza del continente capturando la **Nicaragua Sandinista**, sobreviviendo a la prisión (1979), y trabajando para las grandes agencias europeas. Su mirada no era la de un turista del dolor, sino la de alguien inmerso en la realidad social:
+
+> *"¿Pueden las pastillas curar la pobreza? Imágenes de la enfermedad de la miseria en Perú a fines del siglo XX."*
+> — **Prensa Alemana** (Reportaje sobre la epidemia del Cólera, Comas, Lima).
 
 * **🪽 La Profecía de Ícaro (El Quiebre en Colombia):**
-    Su madre, Hilda Tricallotis, quiso llamarlo "Ícaro" al nacer, profetizando su destino. En la cúspide de su carrera, la agencia alemana *Zeitenspiegel* le ofreció un año de sueldo pagado para que no renunciara. Sin embargo, tras documentar el horror urbano en **Colombia** (años 90), su instinto vital lo hizo rechazar la oferta y el prestigio para dejar de fotografiar la muerte.
+    Su madre quiso llamarlo "Ícaro" al nacer, profetizando su destino. En la cúspide de su carrera, la agencia alemana *Zeitenspiegel* le ofreció un año de sueldo pagado para que no renunciara. Sin embargo, tras documentar el horror del narcotráfico y la violencia urbana en **Colombia** (años 90), su instinto vital lo hizo rechazar el prestigio para dejar de fotografiar la muerte.
 
 * **🇵🇪 El "Mosquito" y los Francotiradores (Perú, 1996-1997):**
-    Pionero del registro aéreo independiente, cubrió la toma de la Embajada de Japón desde un ultraligero ("Mosquito"), pilotando y disparando simultáneamente. Su audacia lo puso en la mira de **cuatro francotiradores** estatales y, tras el conflicto, sufrió un boicot comercial que precipitó su retorno definitivo a Chile.
+    Pionero del registro aéreo independiente, cubrió la toma de la Embajada de Japón desde un ultraligero ("Mosquito"). Su audacia lo puso en la mira de **cuatro francotiradores** estatales y, tras el conflicto, sufrió un boicot comercial que precipitó su retorno definitivo a Chile.
 
 #### II. La Luz del Fin del Mundo (1998 - 2022) | *Patrimonio, Soberanía y Libros*
-Etapa de consolidación editorial. Haroldo aplicó su maestría aérea al rescate del patrimonio nacional, colaborando con **Editorial Kactus** y la **Armada de Chile**.
-* **Expediciones Antárticas:** Registro de soberanía en Bases Chilenas (Prat), Argentinas e Inglesas.
-* **Rutas Oceánicas:** Documentación en Rapa Nui, Tahití, Ecuador y España.
-* **Revista Vigía:** Fotografía oficial para la difusión del quehacer marítimo nacional.
+Etapa de consolidación editorial. Haroldo aplicó su maestría técnica al rescate del patrimonio, colaborando con **Editorial Kactus** y la **Armada de Chile**.
+* **Expediciones Antárticas y Rutas Oceánicas:** Bases Chilenas (Prat), Argentinas e Inglesas, Rapa Nui, Tahití y España.
+* **Revista Vigía & Faros de Chile:** Fotografía oficial y patrimonial (DIRECTEMAR).
 
 #### III. El Retorno a la Superficie (2023 - Presente) | *La Catarsis*
-Tras jubilarse y quemar sus naves invirtiendo todo en el sueño del vuelo libre y la vida nómade en Motorhome (`fly_` y `nomad_`), Haroldo enfrenta hoy su desafío más complejo: el peso de la gravedad, la salud y el tiempo. 
-Este archivo digital no es solo un museo, es la herramienta para cerrar el ciclo: **vender el equipo, aligerar la carga y volver a la fotografía esencial**. Como en un sueño recurrente donde lucha por salir del fondo de una laguna hacia la superficie, este proyecto busca rescatar su obra para permitirle aterrizar con dignidad.
+Tras quemar sus naves invirtiendo en el vuelo libre y la vida nómade (`fly_` y `nomad_`), Haroldo enfrenta hoy el peso de la gravedad, la salud y el tiempo. 
+Este archivo no es solo un museo, es la herramienta para cerrar el ciclo: **vender el equipo, aligerar la carga y volver a la fotografía esencial**. Como en un sueño recurrente donde lucha por salir a la superficie, este proyecto busca rescatar su obra maestra para permitirle aterrizar con dignidad.
 
 ---
 
 ### 🏛️ Validación Histórica y Académica
 
-Este archivo contiene evidencia primaria de la historia reciente de América Latina.
+> *"Nació en Chile... Su camino a Nicaragua fue a través de la cooperación... No con consignas ni discursos, sino con acciones prácticas."*
+> — **Revista Folket i Bild** (Suecia, Perfil del autor, 1987).
 
 #### 📂 El Expediente del Abandono (1979)
-> **Documento: Oficio Reservado Managua RES No. 1/100**
-> El Cónsul de Chile en Managua informa su decisión de **"abstenerse de intervenir"** ante la captura de Haroldo, justificando el abandono estatal porque el prisionero *"desprestigia al país"* al declarar que *"sería horrible lo que le espera en Chile"* bajo la dictadura.
+El Cónsul de Chile en Managua informa (Oficio Reservado 1/100) su decisión de **"abstenerse de intervenir"** ante la captura de Haroldo, justificando el abandono porque el prisionero *"desprestigia al país"* al criticar la dictadura de Pinochet.
 
 #### 🗽 El Ojo del New York Times (1987)
-> **Publicación:** *The New York Times*, 8 de Octubre, 1987.
-> Retrato del **Coronel Uriel Vanegas** (Comandante Miskito) en Puerto Cabezas, ilustrando el reportaje de Stephen Kinzer sobre el proceso de paz.
+Mientras Chile lo ignoraba, el *New York Times* (Oct. 1987) publicaba su retrato exclusivo del **Coronel Uriel Vanegas** (Comandante Miskito), marcando el proceso de paz en Nicaragua.
 
 #### 🇩🇪 El Núcleo Europeo: Agencia Zeitenspiegel
-Haroldo Horta y Cristina Hurtado integraron la "plana mayor" de la prestigiosa agencia alemana **Zeitenspiegel**. Documentos de la época confirman que eran parte del núcleo que explicaba Latinoamérica a Europa.
-
-#### 🇸🇪 La Dupla del Norte: Dagens Nyheter (1988)
-Junto al corresponsal Lars Palmgren, Haroldo conformó el equipo visual del principal diario sueco, documentando el desgaste humano de la revolución en la frontera nicaragüense.
+Haroldo Horta y Cristina Hurtado integraron la plana mayor de la agencia alemana **Zeitenspiegel**, siendo el núcleo que explicaba la realidad de Latinoamérica a Europa.
 
 ---
 
@@ -79,32 +77,42 @@ Junto al corresponsal Lars Palmgren, Haroldo conformó el equipo visual del prin
 
 | Región / País | Medio / Agencia | Prefijo Repo | Temática / Hito |
 | :--- | :--- | :--- | :--- |
-| **Alemania** | **Zeitenspiegel / Stern** | `pub_europa` | Conflictos Centroamérica y Cono Sur. |
+| **Alemania** | **Stern (Jahrbuch)** | `pub_europa` | Anuario Histórico: "Das war 1991" (Las imágenes del año). |
+| **Alemania** | **Der Spiegel** | `pub_pampa` | Etnografía y sociedad: "Hausse in der Pampa" (1992). |
+| **Alemania** | **Frankfurter Allgemeine** | `pub_europa` | Memoria: Estadio Nacional y Dictadura chilena. |
+| **Alemania** | **Prensa Europea (Dossier)** | `pub_europa` | Derechos Humanos: Fosas comunes en Chile (1990). |
+| **Alemania** | **Prensa Alemana** | `pub_europa` | **Epidemia del Cólera en Perú** (Reportaje social). |
+| **Alemania** | **Zeitenspiegel** | `pub_europa` | Agencia Matriz: Conflictos Centroamérica y Cono Sur. |
 | **EE.UU.** | **The New York Times** | `pub_nicaragua`| Paz Indígena Miskita (1987). |
-| **Suecia** | **Dagens Nyheter** | `pub_europa` | Crónica de Guerra (Frontera Norte). |
-| **Francia** | **Prensa Europea** | `pub_europa` | **Epidemia del Cólera** (Reportaje crisis sanitaria). |
-| **Europa** | **Prensa Alemana/Sueca** | `pub_europa` | **Estadio Nacional** (Memoria y Derechos Humanos). |
+| **Suecia** | **Dagens Nyheter / FiB** | `pub_europa` | Crónica de Guerra y Perfil de Autor. |
 | **Perú** | **Diario El Comercio** | `pub_peru` | Especial Aéreo: Embajada de Japón. |
-| **Colombia** | **Prensa Internacional** | `pub_colombia` | Violencia urbana y Narcotráfico (El punto de quiebre). |
-| **Argentina** | **Prensa Internacional** | `pub_pampa` | Etnografía en La Pampa. |
-
----
-
-### 🇨🇱 Matriz de Publicaciones Nacionales y Libros (Kactus / Armada)
-
-| Institución / Editorial | Proyecto / Destino | Prefijo Repo | Temática Principal |
-| :--- | :--- | :--- | :--- |
-| **Armada de Chile** | **Revista Vigía** | `pub_chile` | Difusión marítima y soberanía. |
-| **Armada de Chile** | **Faros de Chile** | `pub_chile` | Registro patrimonial (DIRECTEMAR). |
-| **Armada de Chile** | **Antártida y Bases** | `pub_chile` | Bases Prat (CL), Argentina e Inglesa. |
-| **Editorial Kactus** | **Libros de Turismo** | `pub_chile` | Colecciones: Santiago, Chiloé, Norte Grande. |
-| **Editorial Kactus** | **Rutas Internacionales**| `pub_viajes` | Ecuador, Tahití, España. |
 
 ---
 
 ### 📚 Respaldo Científico
-Investigación del historiador **Fernando Camacho Padilla** (UAM) sobre la supervivencia de los internacionalistas chilenos.
-* 👉 [**📖 Leer Documento de Investigación (PDF)**](docs/investigacion/Dialnet-RelacionesInteramericanas-Horta.pdf)
+Investigación de **Fernando Camacho Padilla** (UAM) sobre la supervivencia de los internacionalistas chilenos. 👉 [**Leer PDF**](docs/investigacion/Dialnet-RelacionesInteramericanas-Horta.pdf)
+
+<br><br>
+
+---
+
+## 🇺🇸 English: The Archive Summary
+
+This repository hosts the **Digital Atlas** of Haroldo Horta: 28TB of photographic memory documenting five decades of Latin American history. It is an archive of survival and unyielding ethics, validated by the world's most prestigious media.
+
+* **The War Correspondent (1979 - 1997):** Captured by Somoza’s forces in Nicaragua and abandoned by the Chilean dictatorship, Haroldo survived to become a top photojournalist for European agencies (*Zeitenspiegel*). His work was published in **The New York Times**, **Der Spiegel**, and the **Stern Yearbook (1991)**. He documented the Sandinista revolution, the Cholera epidemic in Peru, and urban violence in Colombia before choosing to stop photographing death.
+* **The Aerial Pioneer (1996 - 1997):** He pioneered independent aerial photography using an ultralight aircraft ("Mosquito") to cover the Japanese Embassy hostage crisis in Lima, operating under the sights of state snipers.
+* **Patrimony and The Final Flight (1998 - Present):** Returning to Chile, he used his aerial mastery to document national heritage with *Editorial Kactus* and the *Chilean Navy*. Today, this Atlas seeks to preserve his monumental legacy, allowing a lifetime of resistance and art to find its rightful place in history.
+
+---
+
+## 🇧🇷 Português: Resumo do Arquivo
+
+Este repositório abriga o **Atlas Digital** de Haroldo Horta: 28TB de memória fotográfica documentando cinco décadas de história latino-americana. É um arquivo de sobrevivência e ética inabalável, validado pela imprensa global.
+
+* **O Correspondente (1979 - 1997):** Capturado na Nicarágua e abandonado pela ditadura chilena, Haroldo sobreviveu para se tornar um fotógrafo de elite para agências europeias (*Zeitenspiegel*). Seu trabalho foi publicado no **The New York Times**, **Der Spiegel** e no prestigiado **Anuário da Stern (1991)**. Documentou a revolução Sandinista, a epidemia de cólera no Peru e a violência na Colômbia.
+* **O Pioneiro Aéreo (1996 - 1997):** Revolucionou a fotografia aérea usando um ultraleve ("Mosquito") para cobrir a crise dos reféns na Embaixada do Japão em Lima, voando sob a mira de atiradores de elite.
+* **Patrimônio e o Voo Final (1998 - Presente):** De volta ao Chile, usou sua maestria aérea para registrar o patrimônio nacional. Hoje, este Atlas busca preservar seu legado monumental, garantindo que uma vida inteira de resistência e arte encontre seu lugar definitivo na história.
 
 ---
 
