@@ -37,8 +37,14 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
   <img src="fotos/recortes/assets_web/horta-stern-jahrbuch-portada-1991.webp" width="60%" alt="Haroldo Horta - Stern 1991">
 </div>
 
-* **II. La Luz del Fin del Mundo (1997 - 2022):** Definición iconográfica de la geografía de Chile a través de Editorial Kactus y registro de soberanía nacional junto a la Armada de Chile en la Antártida.
+* **II. La Luz del Fin del Mundo (1997 - 2022):** Especial hito que cierra la etapa previa de corresponsal y abre otra faceta por ahira inesprorada para haroldo y en el mundo en general, utilizar su ultraligero no solamente para volar, sino como medio para poder realizar fotografía aeréa al mas alto nivel. Definición iconográfica de la geografía de Chile a través de Editorial Kactus y registro de soberanía nacional junto a la Armada de Chile en la Antártida.
+* 
+<div align="center">
+<img src="fotos\recortes\assets_web\horta-el-comercio-peru-embajada-1997.webp" width="65%" alt="Secuestro embajada Japon El Comercio">
+</div>
 
+<div align="center">
+<img src="fotos\pub_chiloe\libro_chiloe.webp" width="100%" alt="portada libro chiloe kactus foto">
 
 * **III. El Vuelo Esencial (Presente):** El legado se digitaliza mientras la mirada evoluciona hacia la fotografía aérea y el "vuelo libre" sobre los paisajes del altiplano.
 
