@@ -43,7 +43,8 @@ Documentó la crudeza del continente capturando la **Nicaragua Sandinista**, sob
 <img src="assets_web/horta-new-york-times-nicaragua-1987.webp" width="100%" alt="NYT 1987 Haroldo Horta">
 <p align="center"><i>Retrato del Coronel Uriel Vanegas (Nicaragua), publicado por el New York Times en 1987.</i></p>
 
-#### II. La Luz del Fin del Mundo (1998 - 2022) | *Patrimonio y Soberanía*
+#### II. La Luz del Fin del Mundo (1997 - 2022) | *Patrimonio y Soberanía*
+Pionero del registro aéreo independiente, cubrió la toma de la Embajada de Japón desde un ultraligero ("Mosquito"). Su audacia lo puso en la mira de **cuatro francotiradores** estatales y, tras el conflicto, sufrió un boicot comercial que precipitó su retorno definitivo a Chile.
 Consolidación como referente editorial en Chile, uniendo la precisión técnica con la majestuosidad geográfica:
 * **Editorial Kactus:** Creación de obras iconográficas sobre la geografía y cultura chilena.
 * **La Armada de Chile:** Registro de la soberanía nacional, desde bases antárticas hasta faros remotos.
