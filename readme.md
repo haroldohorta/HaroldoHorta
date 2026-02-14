@@ -111,11 +111,14 @@ Como parte del **Proyecto Surdao**, cada pieza de este archivo ha sido validada 
 
 <div align="center">
   <img src="fotos/recortes/assets_web/horta-certificacion-propiedad-intelectual.webp" width="50%" alt="Certificación">
-  <br><br>
-  <img src="fotos/recortes/assets_web/horta-agencia-zeitenspiegel-alemania-equipo.webp" width="70%" alt="Equipo Zeitenspiegel">
-  <p><i>Haroldo Horta junto al equipo central de la agencia Zeitenspiegel en Alemania.</i></p>
-</div>
+  </div>
+ 
 
 <div align="center">
   <p><b>© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.</b></p>
+ 
+  <div align="center">
+   <img src="fotos/recortes/assets_web/horta-agencia-zeitenspiegel-alemania-equipo.webp" width="25%" alt="Equipo Zeitenspiegel">
+  <p><i>Haroldo Horta junto al equipo central de la agencia Zeitenspiegel en Alemania.</i></p>
 </div>
+
