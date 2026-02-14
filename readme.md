@@ -143,7 +143,7 @@ Este repositório abriga o **Atlas Digital** de Haroldo Horta: 28TB de memória 
 
 **© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.**
 
-Este Atlas es el resultado del **Proyecto Surdao**, una iniciativa tecnológica y familiar dedicada exclusivamente al rescate, preservación y difusión de memoria histórica viva. Nuestro objetivo no es solo alojar un archivo de 28TB, sino proteger a su autor y blindar la dignidad de su relato, asegurando que el legado visual de toda una vida quede resguardado para las futuras generaciones. 
+Este Atlas es el resultado del **Proyecto Surdao**, una iniciativa tecnológica y política dedicada exclusivamente al rescate, preservación y difusión de memoria histórica viva. Nuestro objetivo no es solo alojar un archivo de 28TB, sino proteger a su autor y blindar la dignidad de su relato, asegurando que el legado visual de toda una vida quede resguardado para las futuras generaciones. 
 
 *Cualquier uso, reproducción, distribución, comercialización o exhibición del material fotográfico contenido en este repositorio requiere autorización expresa y por escrito de los titulares.*
 
