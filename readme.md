@@ -25,45 +25,49 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 
 ### 📜 Una Trayectoria en Tres Actos
 
-#### I. El Corresponsal (1979 - 1997) | *El Barro y la Trinchera*
-Haroldo documentó la **Nicaragua Sandinista**, sobrevivió a la prisión política en 1979 y se consolidó como una de las miradas más crudas y humanas de la prensa europea (Stern, Spiegel, FAZ).
+#### I. El Corresponsal (1979 - 1997)
+Documentó la **Nicaragua Sandinista**, sobrevivió a la prisión política en 1979 y se consolidó en la plana mayor de la prensa europea (*Stern, Spiegel, FAZ*).
 
 <img src="assets_web/horta-new-york-times-nicaragua-1987.webp" width="100%" alt="NYT 1987 Haroldo Horta">
 <p align="center"><i>Retrato del Coronel Uriel Vanegas (Nicaragua), publicado por el New York Times en 1987.</i></p>
 
-* **🪽 El Giro del Destino:** Tras años de fotografiar el conflicto y el dolor —como la epidemia de cólera en Perú— Haroldo decidió cambiar la perspectiva. Dejó el suelo para buscar la libertad en el aire, convirtiéndose en pionero del fotoperiodismo aéreo.
+#### II. La Luz del Fin del Mundo (1998 - 2022)
+Consolidación editorial registrando la geografía humana desde las bases antárticas hasta los hitos de la **Armada de Chile**.
 
-<img src="assets_web/horta-el-comercio-peru-embajada-1997.webp" width="100%" alt="Asedio Embajada de Japón Lima 1997">
-<p align="center"><i><b>Operación Chavín de Huántar:</b> Registro aéreo del asedio a la Embajada de Japón en Lima (1997), capturado bajo condiciones extremas de seguridad.</i></p>
-
-#### II. La Luz del Fin del Mundo (1998 - 2022) | *Patrimonio y Soberanía*
-Consolidación editorial en Chile, registrando la geografía humana y física desde las bases antárticas hasta los hitos de la Armada de Chile.
-
-#### III. El Vuelo Esencial y el Legado (Presente)
-Hoy, Haroldo asume el compromiso de digitalizar su vida. Este archivo es el aterrizaje final de una memoria que ya no cabe en una maleta, sino que pertenece al patrimonio mundial.
+#### III. El Vuelo Esencial (Presente)
+Hoy, Haroldo asume el compromiso de digitalizar su vida para que 50 años de memoria viva aterricen con dignidad.
 
 ---
 
-### 🏛️ Validación Internacional (Series SEO)
+## 🏛️ Validación y Prensa Internacional
 
-| Medio / Agencia | Hito Histórico |
+| Medio / Agencia | Hito Histórico / Referencia |
 | :--- | :--- |
 | **Stern (Alemania)** | "Imágenes del Año" en el Anuario 1991. |
-| **Der Spiegel** | Crónica social "Hausse in der Pampa" (1992). |
-| **The New York Times** | Conflicto Miskito, Nicaragua (1987). |
-| **Folket i Bild (Suecia)** | Monografía sobre la Revolución (1987). |
-| **Frankfurter Allgemeine** | Memoria histórica del Estadio Nacional de Chile. |
+| **The New York Times** | Paz Indígena Miskita, Nicaragua (1987). |
+| **La Nación (Arg)** | [Haroldo Horta: El fotógrafo que vuela](https://www.lanacion.com.ar/turismo/haroldo-horta-el-fotografo-que-vuela-nid1789782/) |
+| **La Tercera (Chile)** | [Una vida de alto vuelo](https://www.latercera.com/diario-impreso/una-vida-de-alto-vuelo) |
 
-<img src="assets_web/horta-agencia-zeitenspiegel-alemania-equipo.webp" width="100%" alt="Agencia Zeitenspiegel">
-<p align="center"><i>Haroldo Horta junto al equipo central de la agencia alemana Zeitenspiegel.</i></p>
+<img src="assets_web/horta-folket-i-bild-portada-nicaragua.webp" width="100%" alt="Folket i Bild Portada Nicaragua">
+<p align="center"><i>Portada de la revista sueca "Folket i Bild" (1987) con el trabajo monográfico de Horta sobre la Revolución.</i></p>
 
 ---
 
-### 🛡️ Copyright y Rescate Histórico
+## 🇺🇸 English: The Archive Summary
+This repository hosts the digital legacy of Haroldo Horta, a world-renowned photojournalist. From the frontlines of the Sandinista Revolution to aerial surveys of the Antarctic, this archive documents 50 years of global history.
+* **Key focus:** Human rights, international conflicts, and South American geography.
+* **Status:** Open for historical research and institutional inquiries.
+
+## 🇧🇷 Português: Resumo do Arquivo
+Este repositório contém o legado digital de Haroldo Horta. Como correspondente internacional para meios como *Der Spiegel* e *NYT*, Horta registrou momentos cruciais da história latino-americana e global.
+* **Destaque:** Conflitos na Nicarágua, crises sociais no Peru e expedições à Antártida.
+
+---
+
+## 📩 Invitación a los Lectores y Aliados
+Este Atlas es un proyecto vivo. Invitamos a historiadores, museos, aliados estratégicos y a la comunidad en general a explorar esta memoria. Si tienes información sobre las exposiciones históricas o deseas colaborar con el **Proyecto Surdao**, contáctanos.
 
 **© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.**
-
-Este Atlas es el resultado del **Proyecto Surdao**, dedicado al rescate y difusión de memoria histórica. Cualquier uso, reproducción o exhibición del material requiere autorización expresa.
 
 <div align="center">
   <p><b>Contacto:</b> <a href="mailto:haroldohorta@gmail.com">haroldohorta@gmail.com</a></p>
