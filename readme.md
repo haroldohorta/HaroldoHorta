@@ -35,10 +35,6 @@ Este repositorio constituye el **Atlas Digital** de Haroldo Horta: 28TB de memor
 #### I. El Corresponsal (1979 - 1997)
 Documentó la Nicaragua Sandinista (sobreviviendo a la prisión política en 1979) y los conflictos sociales en Perú, integrando la plana mayor de la prensa europea.
 
-<div align="center">
-  <img src="fotos/recortes/assets_web/horta-stern-jahrbuch-portada-1991.webp" width="60%" alt="Haroldo Horta - Stern 1991">
-</div>
-
 #### II. La Luz del Fin del Mundo (1997 - 2022)
 Este período marca un hito fundamental: el cierre de la etapa de corresponsalía y la apertura de una faceta innovadora. Haroldo comienza a utilizar su **ultraligero** no solo para el vuelo deportivo, sino como una plataforma tecnológica para realizar fotografía aérea al más alto nivel. 
 
