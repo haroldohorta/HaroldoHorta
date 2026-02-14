@@ -91,13 +91,14 @@ La obra de Haroldo Horta es objeto de estudio por su valor en la reconstrucción
 
 ## 🛡️ Blindaje del Legado y Propiedad
 
-Como parte del **Proyecto Surdao**, cada pieza de este archivo ha pasado por un proceso de validación técnica y legal para asegurar su permanencia, autoría y correcta gestión de derechos de propiedad intelectual.
-
 <div align="center">
   <img src="fotos/recortes/assets_web/horta-certificacion-propiedad-intelectual.webp" width="45%" alt="Certificación">
   <br><br>
+  
+Como parte del **Proyecto Surdao**, cada pieza de este archivo ha pasado por un proceso de validación técnica y legal para asegurar su permanencia, autoría y correcta gestión de derechos de propiedad intelectual.
+
+**© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.**
+
   <img src="fotos/recortes/assets_web/horta-agencia-zeitenspiegel-alemania-equipo.webp" width="45%" alt="Equipo Zeitenspiegel">
   <p><i>Haroldo Horta junto al equipo central de la agencia Zeitenspiegel en Alemania.</i></p>
 </div>
-
-**© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.**
