@@ -51,9 +51,10 @@ Etapa de consolidación editorial. Haroldo aplicó su maestría técnica al resc
 * **Expediciones Antárticas y Rutas Oceánicas:** Bases Chilenas (Prat), Argentinas e Inglesas, Rapa Nui, Tahití y España.
 * **Revista Vigía & Faros de Chile:** Fotografía oficial y patrimonial (DIRECTEMAR).
 
-#### III. El Retorno a la Superficie (2023 - Presente) | *La Catarsis*
-Tras quemar sus naves invirtiendo en el vuelo libre y la vida nómade (`fly_` y `nomad_`), Haroldo enfrenta hoy el peso de la gravedad, la salud y el tiempo. 
-Este archivo no es solo un museo, es la herramienta para cerrar el ciclo: **vender el equipo, aligerar la carga y volver a la fotografía esencial**. Como en un sueño recurrente donde lucha por salir a la superficie, este proyecto busca rescatar su obra maestra para permitirle aterrizar con dignidad.
+III. El Vuelo Esencial y el Legado (2023 - Presente) | El Cambio de Altitud
+Tras años empujando los límites del registro nómade y el vuelo libre (fly_ y nomad_), Haroldo ha decidido que esta etapa ha cumplido su ciclo natural. Fiel a esa misma brújula que siempre le exigió ser absolutamente libre, hoy toma la decisión consciente de soltar el lastre material y el equipo pesado para asumir un compromiso total con su legado histórico.
+
+Este archivo digital no es un retiro, es una evolución. Es la herramienta diseñada para aligerar la carga, cerrar un capítulo físico y permitirle volver a la fotografía en su forma más pura y esencial. Como un Ícaro que elige su propia pista de aterrizaje, Haroldo no deja de volar, sino que decide hacerlo de otra forma: asegurando que sus 50 años de memoria viva queden blindados para siempre y a disposición del mundo.
 
 ---
 
