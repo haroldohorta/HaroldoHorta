@@ -22,7 +22,7 @@
     <small><i>Apoya el rescate y digitalización de este archivo histórico.</i></small>
   </p>
 
-   <p>  <i>"Desde la trinchera sandinista y el asedio en Lima, hasta el silencio de la Antártida y el vuelo libre en Atacama. Un legado que documenta la dignidad humana desde el cielo y la tierra."</i>
+   <p>  <i>"Desde la trinchera sandinista y el asedio en Lima, hasta el silencio de la Antártida y el vuelo libre en Atacama. Un legado que documenta la dignidad/miseria humana, como tambien la belleza de este planeta donde habitamos."</i>
   </p>
 
   <h1><a href="https://haroldohorta.github.io/atlas/">🌍 ACCEDER AL ATLAS INTERACTIVO 🌍</a></h1>
