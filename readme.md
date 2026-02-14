@@ -98,7 +98,7 @@ This digital repository hosts the professional legacy of **Haroldo Horta**, whos
 ## 🇧🇷 PORTUGUÊS: Resumo do Arquivo
 
 <div align="center">
-  <img src="fotos/recortes/assets_web/horta-propiedad-uyuni-panoramica.webp" width="85%" alt="Salar de Uyuni Panorâmica">
+  <img src="fotos/recortes/assets_web/horta-propiedad-uyuni-panoramica.webp" width="100%" alt="Salar de Uyuni Panorâmica">
 </div>
 
 Este repositório contém o legado digital de **Haroldo Horta**. Como correspondente internacional e fotógrafo editorial, Horta registrou momentos cruciais da história latino-americana, unindo o rigor jornalístico à majestade do território.
@@ -110,7 +110,7 @@ Este repositório contém o legado digital de **Haroldo Horta**. Como correspond
 Como parte del **Proyecto Surdao**, cada pieza de este archivo ha sido validada técnica y legalmente para asegurar su autoría y permanencia.
 
 <div align="center">
-  <img src="fotos/recortes/assets_web/horta-certificacion-propiedad-intelectual.webp" width="50%" alt="Certificación">
+  <img src="fotos/recortes/assets_web/horta-certificacion-propiedad-intelectual.webp" width="100%" alt="Certificación">
   </div>
  
 
