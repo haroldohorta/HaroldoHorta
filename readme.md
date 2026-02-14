@@ -138,8 +138,11 @@ Este repositório abriga o **Atlas Digital** de Haroldo Horta: 28TB de memória 
 * **Patrimônio e o Voo Final (1998 - Presente):** De volta ao Chile, usou sua maestria aérea para registrar o patrimônio nacional. Hoje, este Atlas busca preservar seu legado monumental, garantindo que uma vida inteira de resistência e arte encontre seu lugar definitivo na história.
 
 ---
+  </p>
+
   <h1><a href="https://haroldohorta.github.io/atlas/">🌍 ACCEDER AL ATLAS / ACCESS THE ATLAS 🌍</a></h1>
 </div>
+
 ### 🛡️ Copyright y Rescate Histórico (Proyecto Surdao)
 
 **© 2026 Haroldo Horta / Proyecto Surdao. Todos los derechos reservados.**
