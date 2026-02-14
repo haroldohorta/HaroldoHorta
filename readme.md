@@ -110,7 +110,7 @@ Este repositório contém o legado digital de **Haroldo Horta**. Como correspond
 Como parte del **Proyecto Surdao**, cada pieza de este archivo ha sido validada técnica y legalmente para asegurar su autoría y permanencia.
 
 <div align="center">
-  <img src="fotos/recortes/assets_web/horta-certificacion-propiedad-intelectual.webp" width="100%" alt="Certificación">
+  <img src="fotos\pub_antartida\base-naval-prat-antartica.webp" width="100%" alt="base naval prat antartica">
   </div>
  
 
