@@ -112,7 +112,7 @@ Para conocer al hombre detrás del lente, la prensa sudamericana ha documentado 
 
 ---
 
-### 📚 Respaldo Científico
+### 📚 Respaldo académico 
 Investigación de **Fernando Camacho Padilla** (UAM) sobre la supervivencia de los internacionalistas chilenos. 👉 [**Leer PDF**](docs/investigacion/Dialnet-RelacionesInteramericanas-Horta.pdf)
 
 <br><br>
