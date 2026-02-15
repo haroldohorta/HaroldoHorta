@@ -40,10 +40,24 @@ Este período marca un hito fundamental: el cierre de la etapa de corresponsalí
 
 Esta transición permitió la definición iconográfica de la geografía de Chile a través de **Editorial Kactus** y el registro exhaustivo de la soberanía nacional junto a la **Armada de Chile** en la Antártida y faros remotos.
 
+#### II. La Luz del Fin del Mundo (1997 - 2022)
+Este período marca un hito fundamental: el cierre de la etapa de corresponsalía y la apertura de una faceta innovadora. Haroldo comienza a utilizar su **ultraligero** no solo para el vuelo deportivo, sino como una plataforma tecnológica para realizar fotografía aérea al más alto nivel. 
+
+Esta transición permitió la definición iconográfica de la geografía de Chile a través de **Editorial Kactus** y el registro exhaustivo de la soberanía nacional junto a la **Armada de Chile**.
+
 <div align="center">
-  <img src="fotos/recortes/assets_web/horta-el-comercio-peru-embajada-1997.webp" width="65%" alt="Embajada Japon 1997">
-  <br><br>
-  <img src="fotos/pub_chiloe/libro_chiloe.webp" width="70%" alt="Portada Libro Chiloé">
+<table>
+  <tr valign="middle">
+    <td width="48%" align="center" style="border: none;">
+      <img src="fotos/recortes/assets_web/horta-el-comercio-peru-embajada-1997.webp" alt="Embajada Japon 1997" width="100%">
+      <p><i>Operación Chavín de Huántar (1997).</i></p>
+    </td>
+    <td width="48%" align="center" style="border: none;">
+      <img src="fotos/pub_chiloe/libro_chiloe.webp" alt="Portada Libro Chiloé" width="100%">
+      <p><i>Editorial Kactus: Identidad visual de Chile.</i></p>
+    </td>
+  </tr>
+</table>
 </div>
 
 #### III. El Vuelo Esencial (Presente)
