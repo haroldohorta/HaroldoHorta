@@ -147,7 +147,7 @@ Este repositório contém o legado digital de **Haroldo Horta**. Como correspond
 
 ## 🛡️ Blindaje del Legado y Propiedad
 
-Como parte del **Proyecto Surdao**, cada pieza de este archivo ha sido validada técnica y legalmente para asegurar su autoría y permanencia.
+Como parte del **Proyecto Surdao**, es parte de un proyecto de recuperacion de trayectorias humanas, cada pieza de este archivo ha sido validada técnica y legalmente para asegurar su autoría y permanencia.
 
 <div align="center">
   <img src="fotos/pub_antartida/base-naval-prat-antartica.webp" width="80%" alt="Base Naval Prat Antártica">
