@@ -16,96 +16,196 @@
         .popup-img { width: 100%; height: 140px; object-fit: cover; border-bottom: 1px solid #ff9f1c; display: block; background: #000; }
         .btn-portafolio { width: 100%; background: #222; color: #ff9f1c; padding: 10px; cursor: pointer; text-transform: uppercase; font-weight: bold; font-size: 11px; text-decoration: none; display: block; text-align: center; box-sizing: border-box; transition: 0.3s; }
         .btn-portafolio:hover { background: #ff9f1c; color: #000; }
-        .marker-cluster div { background-color: #000 !important; color: #ff9f1c !important; border: 1px solid #ff9f1c; font-family: 'Courier New', monospace; font-weight: bold; }
-        .legend { position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.8); border: 1px solid #444; padding: 10px; z-index: 1000; font-size: 11px; border-radius: 4px; }
-        .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+        
+        .marker-cluster div { background-color: #000 !important; border: 2px solid #fff; font-family: 'Courier New', monospace; font-weight: bold; }
+        
+        /* --- PANEL TÁCTICO DE BOTONES --- */
+        #controls { position: absolute; top: 10px; right: 10px; z-index: 1000; background: rgba(0,0,0,0.8); padding: 10px; border-radius: 4px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; max-width: 700px;}
+        
+        button.btn-filter {
+            font-family: 'Courier New', monospace;
+            font-weight: 900;
+            font-size: 12px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        /* Colores de Alto Contraste */
+        .btn-todo { background: #ffffff; color: #000000; border: 2px solid #ffffff; }
+        .btn-patrimonio { background: #FFD700; color: #000000; border: 2px solid #FFD700; } /* Dorado Fuerte */
+        .btn-aereo { background: #005CE6; color: #ffffff; border: 2px solid #005CE6; } /* Azul Profundo */
+        .btn-nomad { background: #FF1A1A; color: #000000; border: 2px solid #FF1A1A; } /* Rojo Puro */
+        .btn-narrativa { background: #9900FF; color: #ffffff; border: 2px solid #9900FF; } /* Morado Neón */
+        
+        /* Botón Satélite Especial */
+        .btn-sat { background: #111; color: #00ffcc; border: 2px solid #00ffcc; margin-right: 15px;}
+
+        button.inactive {
+            background: #222 !important;
+            color: #555 !important;
+            border-color: #333 !important;
+        }
+
+        button:hover:not(.inactive) { filter: brightness(1.2); transform: scale(1.02); }
+
+        /* --- LEYENDA --- */
+        .legend { position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.8); border: 1px solid #444; padding: 10px; z-index: 1000; font-size: 12px; font-weight: bold; border-radius: 4px; color: #fff;}
+        .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; margin-right: 8px; vertical-align: middle;} 
+        
         #loading { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #0f0f0f; z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; }
         #loading .spinner { font-size: 50px; margin-bottom: 20px; animation: spin 2s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        #controls { position: absolute; top: 10px; right: 10px; z-index: 1000; background: rgba(0,0,0,0.8); padding: 10px; border-radius: 4px; }
-        button { background: #222; color: #ff9f1c; border: 1px solid #ff9f1c; padding: 5px 10px; margin: 2px; cursor: pointer; font-family: inherit; font-size: 11px; }
-        button:hover, button.active { background: #ff9f1c; color: #000; }
     </style>
 </head>
 <body>
-<div id="loading"><div class="spinner">📷</div><div style="color:#ff9f1c;">Cargando Atlas...</div></div>
+<div id="loading"><div class="spinner">📷</div><div style="color:#FFD700; font-weight:bold;">CARGANDO ATLAS...</div></div>
 <div id="map"></div>
+
 <div id="controls">
-    <button onclick="fitAll()">🌍 TODO</button>
-    <button onclick="fitAtacama()">🏜️ ATA</button>
-    <button onclick="fitFordlandia()">🌳 FORD</button>
-    <button onclick="toggleFord()">Ford ON/OFF</button>
+    <button id="btn-sat" class="btn-filter btn-sat" onclick="toggleSatelite()">🛰️ SATÉLITE</button>
+    <button id="btn-todo" class="btn-filter btn-todo" onclick="verTodo()">🌍 VER TODO</button>
+    <button id="btn-patrimonio" class="btn-filter btn-patrimonio" onclick="toggleCapa('patrimonio')">🏛️ PATRIMONIO (pub_)</button>
+    <button id="btn-aereo" class="btn-filter btn-aereo" onclick="toggleCapa('aereo')">✈️ AÉREO (fly_)</button>
+    <button id="btn-nomad" class="btn-filter btn-nomad" onclick="toggleCapa('nomad')">🎒 NÓMADE (nomad_)</button>
+    <button id="btn-narrativa" class="btn-filter btn-narrativa" onclick="toggleCapa('narrativa')">🎙️ NARRATIVA</button>
 </div>
+
 <div class="legend">
-    <div><span class="dot" style="background:#b366ff;"></span> NARRATIVA</div>
-    <div><span class="dot" style="background:#ff4d4d;"></span> CRÓNICA</div>
-    <div><span class="dot" style="background:#4d94ff;"></span> AÉREO</div>
-    <div><span class="dot" style="background:#ffdb4d;"></span> PATRIMONIO</div>
+    <div style="margin-bottom: 5px;"><span class="dot" style="background:#FFD700;"></span> PATRIMONIO</div>
+    <div style="margin-bottom: 5px;"><span class="dot" style="background:#005CE6;"></span> AÉREO</div>
+    <div style="margin-bottom: 5px;"><span class="dot" style="background:#FF1A1A;"></span> NÓMADE</div>
+    <div><span class="dot" style="background:#9900FF;"></span> NARRATIVA</div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 <script>
-    const map = L.map('map').setView([-22.9, -68.2], 10);  // ¡Zoom ATA espírál!
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution: 'SUR DAO | Haroldo Horta' }).addTo(map);
+    // Configuración de las dos capas (Oscura y Satélite) con límite de zoom (maxZoom: 16)
+    const capaOscura = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { 
+        attribution: 'SUR DAO | Haroldo Horta',
+        maxZoom: 16 
+    });
+    const capaSatelite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { 
+        attribution: 'Tiles &copy; Esri',
+        maxZoom: 16 
+    });
+
+    // Iniciar mapa con límite de altitud para evitar el "vacío gris"
+    const map = L.map('map', {
+        center: [-22.9, -68.2],
+        zoom: 10,
+        maxZoom: 16, // ¡El Paracaídas!
+        layers: [capaOscura]
+    });
     
-    let allMarkers = L.layerGroup(), atacamaMarkers = L.layerGroup(), fordMarkers = L.layerGroup();
     const markers = L.markerClusterGroup({ spiderfyOnMaxZoom: true, zoomToBoundsOnClick: true });
-    let showFord = true;
     
-    const getStyle = (c) => {
-        if(!c) return "#fff";
-        if(c.includes('Narrativa')) return "#b366ff";
-        if(c.includes('Crónica')) return "#ff4d4d";
-        if(c.includes('Aéreo') || c.includes('fly')) return "#4d94ff";
-        if(c.includes('Patrimonio')) return "#ffdb4d";
-        return "#ffffff";
-    };
-    
-    // Offset espiral para clusters
     function getSpiralOffset(lat, lon, index, totalPerZone = 20) {
-        const angle = (index / totalPerZone) * Math.PI * 4;  // Espiral tensa
-        const r = 0.0008 * (1 + 0.5 * Math.sin(angle));  // Radio variable
+        const angle = (index / totalPerZone) * Math.PI * 4;
+        const r = 0.0008 * (1 + 0.5 * Math.sin(angle));
         return [lat + Math.cos(angle) * r, lon + Math.sin(angle) * r];
     }
     
+    let allData = [];
+    let filtrosActivos = { patrimonio: true, aereo: true, nomad: true, narrativa: true };
+    let modoSatelite = false;
+
+    // Función del botón satélite
+    window.toggleSatelite = () => {
+        modoSatelite = !modoSatelite;
+        const btnSat = document.getElementById('btn-sat');
+        
+        if (modoSatelite) {
+            map.removeLayer(capaOscura);
+            map.addLayer(capaSatelite);
+            btnSat.innerHTML = '🗺️ MODO RADAR';
+            btnSat.style.color = '#FFD700';
+            btnSat.style.borderColor = '#FFD700';
+        } else {
+            map.removeLayer(capaSatelite);
+            map.addLayer(capaOscura);
+            btnSat.innerHTML = '🛰️ SATÉLITE';
+            btnSat.style.color = '#00ffcc';
+            btnSat.style.borderColor = '#00ffcc';
+        }
+    };
+
     fetch('data/puntos_mapa.json').then(res => res.json()).then(data => {
         document.getElementById('loading').style.display = 'none';
-        
-        let fordIdx = 0, atacamaIdx = 0;
-        data.forEach((p, i) => {
+        allData = data;
+        renderizarMapa();
+    });
+
+    function renderizarMapa() {
+        markers.clearLayers();
+        let indexSpiral = 0;
+
+        allData.forEach((p, i) => {
             if (!p.lat || !p.lon) return;
-            
-            // Offset espiral por zona
-            let [offsetLat, offsetLon] = getSpiralOffset(p.lat, p.lon, 
-                p.zona === 'fordlandia' ? fordIdx++ : atacamaIdx++);
-            
-            const marker = L.circleMarker([offsetLat, offsetLon], { 
-                radius: 8, fillColor: getStyle(p.capa), color: "#000", weight: 1, fillOpacity: 0.9 
-            });
-            marker.bindPopup(`<div style="min-width:180px;text-align:center;"><div style="font-size:9px;color:#888;text-transform:uppercase;">${p.capa||'ARCHIVO'}</div><h3 style="color:#ff9f1c;">${(p.zona||'ZONA').toUpperCase()}</h3><img src="${p.thumb}" class="popup-img" onerror="this.style.display='none'"><a href="galeria.html?zona=${p.zona}" class="btn-portafolio">ABRIR EXPEDIENTE 📂</a></div>`);
-            
-            if (p.zona === 'fordlandia') {
-                fordMarkers.addLayer(marker);
-            } else {
-                atacamaMarkers.addLayer(marker);
+
+            let tipo = 'patrimonio'; 
+            let capa = p.capa || '';
+            let id = p.id || '';
+
+            if (capa.includes('Narrativa')) tipo = 'narrativa';
+            else if (capa.includes('Aéreo') || id.includes('fly_')) tipo = 'aereo';
+            else if (capa.includes('Nomad') || id.includes('nomad_')) tipo = 'nomad';
+            else tipo = 'patrimonio';
+
+            // Colores puros de alto contraste
+            let mColor = "#FFD700"; 
+            if (tipo === 'narrativa') mColor = "#9900FF";
+            if (tipo === 'aereo') mColor = "#005CE6";
+            if (tipo === 'nomad') mColor = "#FF1A1A";
+
+            if (filtrosActivos[tipo]) {
+                let [offsetLat, offsetLon] = getSpiralOffset(p.lat, p.lon, indexSpiral++);
+                
+                // Puntos con borde BLANCO grueso (Alto contraste)
+                const marker = L.circleMarker([offsetLat, offsetLon], { 
+                    radius: 9, fillColor: mColor, color: "#ffffff", weight: 2, fillOpacity: 1 
+                });
+                
+                marker.bindPopup(`<div style="min-width:180px;text-align:center;">
+                    <div style="font-size:10px;color:${mColor};font-weight:bold;text-transform:uppercase;">${tipo}</div>
+                    <h3 style="color:#fff; margin: 5px 0;">${(p.zona||'ZONA').toUpperCase()}</h3>
+                    <img src="${p.thumb}" class="popup-img" onerror="this.style.display='none'">
+                    <a href="galeria.html?zona=${p.zona}" class="btn-portafolio">ABRIR EXPEDIENTE 📂</a>
+                </div>`);
+                
+                markers.addLayer(marker);
             }
-            allMarkers.addLayer(marker);
+        });
+        map.addLayer(markers);
+    }
+
+    window.toggleCapa = (capa) => {
+        filtrosActivos[capa] = !filtrosActivos[capa]; 
+        
+        const btn = document.getElementById(`btn-${capa}`);
+        if(filtrosActivos[capa]) {
+            btn.classList.remove('inactive');
+        } else {
+            btn.classList.add('inactive');
+        }
+        
+        document.getElementById('btn-todo').classList.add('inactive');
+        renderizarMapa();
+    };
+
+    window.verTodo = () => {
+        filtrosActivos = { patrimonio: true, aereo: true, nomad: true, narrativa: true };
+        
+        ['patrimonio', 'aereo', 'nomad', 'narrativa', 'todo'].forEach(c => {
+            document.getElementById(`btn-${c}`).classList.remove('inactive');
         });
         
-        map.addLayer(atacamaMarkers);
-        if (showFord) map.addLayer(fordMarkers);
-        map.addLayer(markers);
-        
-        // Funciones controles
-        window.fitAll = () => map.fitBounds(allMarkers.getBounds(), {padding: [20,20]});
-        window.fitAtacama = () => map.fitBounds(atacamaMarkers.getBounds(), {padding: [50,50], maxZoom: 13});
-        window.fitFordlandia = () => map.setView([-3.831, -55.498], 16);
-        window.toggleFord = () => {
-            showFord = !showFord;
-            if (showFord) map.addLayer(fordMarkers); else map.removeLayer(fordMarkers);
-        };
-    });
+        renderizarMapa();
+        map.fitBounds(markers.getBounds(), {padding: [50,50]});
+    };
 </script>
 </body>
 </html>

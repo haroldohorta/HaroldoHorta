@@ -3,92 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expediente | Atlas Haroldo Horta</title>
+    <title>Expediente Táctico | Atlas Haroldo Horta</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Courier New', monospace; background: #0f0f0f; color: #ccc; padding: 20px; line-height: 1.5; }
-        header { text-align: center; margin-bottom: 40px; border-bottom: 1px solid #ff9f1c; padding-bottom: 20px; }
-        h1 { color: #ff9f1c; font-size: 2em; text-transform: uppercase; letter-spacing: 2px; }
-        #back { position: absolute; top: 20px; left: 20px; background: #222; color: #ff9f1c; padding: 10px 15px; text-decoration: none; border: 1px solid #ff9f1c; transition: 0.3s; }
+        
+        /* CABECERA DE EXPEDIENTE */
+        header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #444; padding-bottom: 20px; position: relative; }
+        h1 { color: #FFD700; font-size: 2.5em; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px;}
+        .sub-header { color: #888; font-size: 14px; text-transform: uppercase; margin-top: 5px; }
+        
+        #back { position: absolute; top: 0; left: 0; background: #222; color: #ff9f1c; padding: 10px 15px; text-decoration: none; border: 1px solid #ff9f1c; transition: 0.3s; font-weight: bold; }
         #back:hover { background: #ff9f1c; color: #000; }
-        .stats { display: flex; justify-content: center; gap: 30px; margin: 20px 0; font-size: 14px; }
-        .stat { text-align: center; }
-        .stat-num { font-size: 2em; color: #ff9f1c; font-weight: bold; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1400px; margin: 0 auto; }
-        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 4px; overflow: hidden; transition: 0.3s; }
-        .card:hover { border-color: #ff9f1c; transform: translateY(-5px); }
-        .card-img { width: 100%; height: 200px; object-fit: cover; }
-        .card-header { padding: 15px; background: #000; }
-        .capa { font-size: 11px; text-transform: uppercase; opacity: 0.7; margin-bottom: 5px; }
-        .titulo { color: #ff9f1c; font-weight: bold; font-size: 16px; }
-        .rating { color: #ffdb4d; font-size: 12px; margin-top: 5px; }
-        .desc { padding: 15px; font-size: 13px; }
-        .narrativa { border-left: 4px solid #b366ff !important; }
-        .aereo { border-left: 4px solid #4d94ff !important; }
-        .cronica { border-left: 4px solid #ff4d4d !important; }
-        #loading { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #0f0f0f; z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; }
-        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .stats { flex-direction: column; gap: 10px; } }
+
+        /* GRILLA INTELIGENTE */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; grid-auto-flow: dense; }
+        
+        /* TARJETA DE FOTO */
+        .card { background: #111; border: 1px solid #333; display: flex; flex-direction: column; transition: 0.3s; }
+        .card:hover { border-color: #666; transform: translateY(-3px); }
+        .card-img { width: 100%; height: 250px; object-fit: cover; border-bottom: 1px solid #333; }
+        
+        /* FOTOS 5 ESTRELLAS (PORTADAS) */
+        .card.insignia { border: 2px solid #FFD700; grid-column: span 2; grid-row: span 2; }
+        .card.insignia .card-img { height: 400px; } /* Más grandes */
+        .card.insignia .titulo { color: #FFD700; font-size: 1.5em; }
+
+        .card-body { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; }
+        .titulo { color: #fff; font-size: 1.2em; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
+        .rating { color: #FFD700; font-size: 18px; letter-spacing: 2px; margin-bottom: 10px; }
+        
+        /* METADATA Y RELATO */
+        .metadata { font-size: 11px; color: #00ffcc; margin-bottom: 15px; border-bottom: 1px dashed #333; padding-bottom: 10px; }
+        .relato-box { background: #1a1a1a; padding: 15px; border-left: 3px solid #ff9f1c; font-style: italic; font-size: 13px; color: #eee; flex-grow: 1; }
+        .relato-autor { display: block; margin-top: 10px; font-size: 10px; color: #888; text-transform: uppercase; font-weight: bold; font-style: normal; }
+
+        /* Controles de Scroll Flotantes (Los que ganamos antes) */
+        .scroll-controls { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 10px; z-index: 1000; opacity: 0.7; transition: 0.3s; }
+        .scroll-controls:hover { opacity: 1; }
+        .btn-scroll { background: #111; color: #ff9f1c; border: 1px solid #ff9f1c; width: 40px; height: 40px; font-size: 20px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-scroll:hover { background: #ff9f1c; color: #000; }
+        
+        /* Ajuste para móviles */
+        @media (max-width: 768px) {
+            .card.insignia { grid-column: span 1; }
+            .card.insignia .card-img { height: 250px; }
+        }
     </style>
 </head>
 <body>
-    <div id="loading">Cargando expediente... 📂</div>
-    <a id="back" href="index.html">← ATLAS</a>
     <header>
-        <h1 id="zona-titulo">CARGANDO...</h1>
-        <div class="stats">
-            <div class="stat"><div class="stat-num" id="total">0</div>Fotos</div>
-            <div class="stat"><div class="stat-num" id="narrativa">0</div>Narrativa</div>
-            <div class="stat"><div class="stat-num" id="aereo">0</div>Aéreo</div>
-        </div>
+        <a href="index.html" id="back">← RADAR PRINCIPAL</a>
+        <h1 id="zona-titulo">CARGANDO EXPEDIENTE...</h1>
+        <div class="sub-header" id="zona-desc">Recuperando coordenadas y relatos de la base de datos...</div>
     </header>
-    <div id="grid" class="grid"></div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="scroll-controls">
+        <button class="btn-scroll" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Subir">↑</button>
+        <button class="btn-scroll" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})" title="Bajar">↓</button>
+    </div>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const zona = urlParams.get('zona') || 'fordlandia';  // Default ford para test
-        document.getElementById('zona-titulo').textContent = zona.toUpperCase();
+        const zonaActual = urlParams.get('zona');
         
-        let data = [], filtered = [];
-        const stats = { total: 0, narrativa: 0, aereo: 0, cronica: 0 };
-        
-        fetch('data/puntos_mapa.json')
-            .then(res => res.json())
-            .then(allData => {
-                data = allData.filter(p => p.zona === zona);
-                filtered = data.sort((a,b) => (b.rating || 0) - (a.rating || 0));  // Top rating first
-                
-                // Stats
-                filtered.forEach(p => {
-                    stats.total++;
-                    if (p.capa?.includes('Narrativa')) stats.narrativa++;
-                    else if (p.capa?.includes('Aéreo')) stats.aereo++;
-                    else stats.cronica++;
+        if(!zonaActual) {
+            document.getElementById('zona-titulo').textContent = "ERROR: ZONA NO ESPECIFICADA";
+        } else {
+            fetch('data/puntos_mapa.json')
+                .then(res => res.json())
+                .then(data => {
+                    const filtered = data.filter(p => p.zona === zonaActual);
+                    
+                    // Actualizar Cabecera
+                    document.getElementById('zona-titulo').textContent = `EXPEDIENTE: ${zonaActual.replace(/_/g, ' ')}`;
+                    document.getElementById('zona-desc').textContent = `${filtered.length} ARCHIVOS CLASIFICADOS | ZONA DE OPERACIÓN CONFIRMADA`;
+                    
+                    renderGrid(filtered);
                 });
-                
-                document.getElementById('total').textContent = stats.total;
-                document.getElementById('narrativa').textContent = stats.narrativa;
-                document.getElementById('aereo').textContent = stats.aereo;
-                
-                document.getElementById('loading').remove();
-                renderGrid();
-            });
+        }
         
-        function renderGrid() {
+        function renderGrid(fotos) {
             const grid = document.getElementById('grid');
             grid.innerHTML = '';
-            filtered.forEach(p => {
+            
+            // Ordenar: Las de 5 estrellas van primero
+            fotos.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+
+            fotos.forEach(p => {
+                const estrellas = p.rating || 0; // Si no tiene, es 0
+                const esInsignia = estrellas === 5 ? 'insignia' : ''; // Clase especial para 5 estrellas
+                const estrellasHTML = '★'.repeat(estrellas) + '☆'.repeat(5 - estrellas);
+                
+                // Si en el JSON le agregas "camara": "Nikon D850", aquí aparecerá
+                const equipoInfo = p.camara ? ` | 📷 EQ: ${p.camara}` : '';
+                const isoInfo = p.iso ? ` | ISO: ${p.iso}` : '';
+
                 const card = document.createElement('div');
-                card.className = `card ${p.capa?.includes('Narrativa') ? 'narrativa' : 
-                                p.capa?.includes('Aéreo') ? 'aereo' : 'cronica'}`;
+                card.className = `card ${esInsignia}`;
                 card.innerHTML = `
-                    <img src="${p.thumb}" class="card-img" alt="${p.titulo}" loading="lazy">
-                    <div class="card-header">
-                        <div class="capa">${p.capa || 'ARCHIVO'}</div>
+                    <img src="${p.full || p.thumb}" class="card-img" alt="${p.titulo}" loading="lazy">
+                    <div class="card-body">
                         <div class="titulo">${p.titulo || p.id}</div>
-                        ${p.rating ? `<div class="rating">★ ${p.rating}</div>` : ''}
+                        ${estrellas > 0 ? `<div class="rating">${estrellasHTML}</div>` : ''}
+                        
+                        <div class="metadata">
+                            📍 GPS: ${p.lat}, ${p.lon} ${equipoInfo} ${isoInfo}
+                            <br>📂 ARCHIVO: ${p.capa || 'Clasificado'}
+                        </div>
+                        
+                        <div class="relato-box">
+                            "${p.relato || 'Pendiente de relato de Haroldo...'}"
+                            <span class="relato-autor">— Bitácora de Campo</span>
+                        </div>
                     </div>
-                    <div class="desc">${p.descripcion || 'Expediente fotográfico'}</div>
                 `;
                 grid.appendChild(card);
             });

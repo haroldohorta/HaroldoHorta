@@ -36,19 +36,24 @@ def generar_atlas_espiral_perfecto():
         if not os.path.isdir(ruta_c) or carpeta == "panos": continue
 
         # Identificamos Capa y Zona para que coincida con tu getStyle()
+        # Identificamos Capa y Zona para que coincida con tu getStyle()
         zona_key = None
         capa_nombre = "Crónica / Etnografía" # Default Rojo
 
         if carpeta.startswith("pub_"):
             zona_key = carpeta.replace("pub_", "")
-            capa_nombre = "Crónica / Etnografía" # -> #ff4d4d
+            capa_nombre = "Crónica / Etnografía"
         elif carpeta.startswith("fly_"):
             zona_key = carpeta.replace("fly_", "")
-            capa_nombre = "Vuelo Aéreo" # -> #4d94ff
+            capa_nombre = "Vuelo Aéreo"
         elif carpeta.startswith("nomad_"):
             zona_key = carpeta.replace("nomad_", "")
-            capa_nombre = "Bitácora Nómada" # -> #ffdb4d
+            capa_nombre = "Bitácora Nómada"
+        elif carpeta.startswith("narrativa_"): # 👈 ¡NUEVA CAPA PREPARADA!
+            zona_key = carpeta.replace("narrativa_", "")
+            capa_nombre = "Narrativa Sonora"
 
+        # EL PORTERO DE LA DISCOTECA: Solo pasa si zona_key está en el CSV
         if zona_key and zona_key in zonas_dict:
             info_gps = zonas_dict[zona_key]
             
@@ -56,12 +61,14 @@ def generar_atlas_espiral_perfecto():
                 if archivo.lower().endswith(".webp"):
                     foto_id = archivo
                     
-                    # SI YA EXISTE: Mantenemos el punto pero corregimos la coordenada y capa
+                    # SI YA EXISTE: Mantenemos el relato, pero actualizamos la ruta y GPS
                     if foto_id in puntos_existentes:
                         punto = puntos_existentes[foto_id]
-                        punto["lat"] = info_gps['lat'] # Volvemos a la coordenada exacta
-                        punto["lon"] = info_gps['lon'] # Volvemos a la coordenada exacta
-                        punto["capa"] = capa_nombre     # Sincronizamos con getStyle
+                        punto["lat"] = info_gps['lat']
+                        punto["lon"] = info_gps['lon']
+                        punto["capa"] = capa_nombre
+                        punto["thumb"] = f"fotos/{carpeta}/{archivo}" # 👈 Blindaje
+                        punto["full"] = f"fotos/{carpeta}/{archivo}"  # 👈 Blindaje
                         puntos_finales.append(punto)
                     else:
                         # SI ES NUEVO: Creamos el bloque completo
@@ -78,7 +85,6 @@ def generar_atlas_espiral_perfecto():
                             "descripcion": info_gps['descripcion'],
                             "relato": "Pendiente de relato de Haroldo..."
                         })
-            print(f"✅ Zona '{zona_key}' sincronizada para espirales.")
 
     # 4. Guardar resultado
     with open(JSON_OUT, 'w', encoding='utf-8') as f:
